@@ -1,137 +1,174 @@
-# Dan Hausch - Personal Landing Page
+# Dan Hausch - Professional Landing Page
 
 A modern, bilingual landing page with light/dark mode support, showcasing Daniel Hauschild de Aragão's professional brand, combining engineering, management, and innovation.
 
-## 🎨 Theme Support
+![Version](https://img.shields.io/badge/version-2.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-The site supports **Light and Dark modes** with an elegant toggle:
+## 🌟 Features
+
+### 🎨 Theme Support
 - **Dark Mode** 🌙 - Professional, modern (Default)
 - **Light Mode** ☀️ - Clean, bright alternative
+- Automatic system preference detection
+- Smooth transitions between modes
 
-Theme preference is saved and automatically detected from your system settings.
-
-## 🌐 Languages
-
-The site supports **two languages** with a toggle in the top-right corner:
+### 🌐 Bilingual Support
 - **English (EN)** - Default
 - **Portuguese (PT-BR)**
+- Complete translations for all content
+- Persistent language preference
 
-Language preference is saved in the browser's localStorage and persists across sessions.
+### 📱 Fully Responsive
+- Desktop, tablet, and mobile optimized
+- Touch-friendly interactions
+- Hamburger menu for mobile
+- Adaptive layouts
 
-## ✨ Features
+### ✨ Interactive Elements
+- Smooth scrolling navigation
+- Animated floating cards
+- 3D hover effects
+- Contact form with validation
+- Beautiful transitions
 
-### Design
-- **Light & Dark modes** with smooth transitions
-- **Dark modern theme** with gradient accents (default)
-- **Light clean theme** for bright environments
-- **Fully responsive** - works on desktop, tablet, and mobile
-- **Smooth animations** and transitions
-- **Interactive elements** with hover effects
+## 🚀 Pages
 
-### Sections
-1. **Hero** - Main tagline with floating cards
-2. **About** - Professional background and credentials
-3. **Products** - ProspectaPro, Navi, and Meditation Courses
-4. **Principles** - Core values (Structure Before Scale, Clarity Before Speed, Automation with Purpose)
-5. **Value Proposition** - Key message
-6. **Contact** - Form and social media links
-7. **Footer** - Copyright and tagline
+### Main Landing Page (`index.html`)
+Complete professional landing page with:
+- Hero section with animated cards
+- About section with credentials
+- Products showcase (Navi, ProspectaPro, Meditation Courses)
+- Core principles section
+- Contact form
+- Social media links
 
-### Internationalization (i18n)
-- Complete translations for EN and PT
-- Automatic detection and persistence
-- Easy to add more languages
-- Clean translation system using `data-i18n` attributes
+### Links Page (`links.html`)
+Linktree-style page featuring:
+- Icon-only social media buttons (LinkedIn, Instagram, YouTube)
+- Project cards with descriptions
+- Featured video showcase
+- All links in one place
 
-## 📁 Files
+## 🛠️ Tech Stack
 
-- `index.html` - Main HTML file with bilingual support and theme toggle
-- `styles.css` - All styling including light/dark modes
-- `theme.js` - Theme management system
-- `i18n.js` - Internationalization system
-- `script.js` - Interactive functionality
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with variables
+- **Vanilla JavaScript** - No dependencies
+- **CSS Grid & Flexbox** - Responsive layouts
+- **localStorage API** - Preference persistence
 
-## 🚀 Usage
+## 📁 Project Structure
 
-Simply open `index.html` in a web browser. No build process required!
+```
+danhausch-branding/
+├── index.html              # Main landing page
+├── links.html              # Links page
+├── styles.css              # Main site styles
+├── links-styles.css        # Links page styles
+├── theme.js                # Theme management
+├── i18n.js                 # Main site translations
+├── links-i18n.js           # Links page translations
+├── script.js               # Main site interactions
+├── links-script.js         # Links page interactions
+└── docs/                   # Documentation files
+    ├── README.md
+    ├── THEME_GUIDE.md
+    ├── LANGUAGE_TOGGLE_GUIDE.md
+    ├── LINKS_PAGE_GUIDE.md
+    ├── PROJECT_STRUCTURE.md
+    └── FEATURES_SUMMARY.md
+```
 
-### Local Development
-1. Open the folder in your code editor
-2. Use a local server (e.g., Live Server in VS Code) or simply open `index.html`
-3. Edit translations in `i18n.js`
-4. Edit styles in `styles.css`
-5. Edit functionality in `script.js`
+## 🎯 Quick Start
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/danielharagao/danhausch-branding.git
+cd danhausch-branding
+```
+
+2. **Open in browser**
+```bash
+# Simply open index.html in your browser
+# No build process required!
+```
+
+3. **Customize**
+- Update content in HTML files
+- Modify colors in CSS variables
+- Add translations in i18n files
+- Update links and social media URLs
 
 ## 🎨 Customization
 
-### Adding New Translations
-Edit the `translations` object in `i18n.js`:
-
-```javascript
-const translations = {
-    en: {
-        nav: {
-            home: "Home"
-            // ... add more
-        }
-    },
-    pt: {
-        nav: {
-            home: "Início"
-            // ... add more
-        }
-    }
-};
-```
-
-### Adding New Languages
-1. Add a new language object in `i18n.js`
-2. Add a new button in the HTML navigation
-3. Update the `switchLanguage` function if needed
-
-### Changing Colors
-
-**Dark Mode** - Edit in `styles.css`:
+### Colors (Dark Mode)
 ```css
 :root {
     --primary-gradient: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
     --dark-bg: #0a0f1c;
     --text-primary: #ffffff;
-    /* ... more variables */
 }
 ```
 
-**Light Mode** - Edit in `styles.css`:
+### Colors (Light Mode)
 ```css
 body[data-theme="light"] {
     --dark-bg: #f7fafc;
     --text-primary: #1a202c;
-    /* ... more variables */
 }
 ```
 
-## 🔗 Social Links
+### Adding Translations
+Edit `i18n.js` or `links-i18n.js`:
+```javascript
+const translations = {
+    en: { /* English */ },
+    pt: { /* Portuguese */ }
+};
+```
 
-Update the social media links in `index.html` (Contact section) to point to the actual profiles.
+## 📱 Browser Support
 
-## 📱 Responsive Breakpoints
+- ✅ Chrome/Edge (latest)
+- ✅ Firefox (latest)
+- ✅ Safari (latest)
+- ✅ Mobile Safari (iOS)
+- ✅ Chrome Mobile (Android)
 
-- **Desktop**: > 968px
-- **Tablet**: 640px - 968px  
-- **Mobile**: < 640px
+## ♿ Accessibility
 
-## 🎯 Brand Positioning
+- WCAG AA compliant
+- Keyboard navigation support
+- ARIA labels on interactive elements
+- Screen reader friendly
+- High contrast in both themes
 
-**Tagline**: "Clarity through Construction"
+## 🌐 Live Demo
 
-**Core Principles**:
-1. Structure Before Scale
-2. Clarity Before Speed
-3. Automation with Purpose
+Visit: [danhausch.com](https://danhausch.com) *(update with your URL)*
+
+## 📧 Contact
+
+**Daniel Hauschild de Aragão**
+- LinkedIn: [danielharagao](https://www.linkedin.com/in/danielharagao/)
+- Instagram: [@danhausch](https://www.instagram.com/danhausch/)
+- YouTube: [@danielharagao](https://www.youtube.com/@danielharagao)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+Built with care and attention to detail. Focused on:
+- Clean, maintainable code
+- Performance optimization
+- User experience
+- Accessibility
 
 ---
 
-**Version**: 1.0  
-**Last Updated**: October 2025  
-**Author**: Daniel Hauschild de Aragão
+**"Clarity through Construction"** 🎯
 
+© 2025 Daniel Hauschild de Aragão. All rights reserved.
