@@ -13,7 +13,7 @@ const translations = {
             links: "Links"
         },
         hero: {
-            title: "Clarity through Construction",
+            title: "Clarity through Creation",
             subtitle: "Transforming complex ideas into intelligent, sustainable products through the intersection of engineering, management, and innovation.",
             cta1: "Get in Touch",
             cta2: "Learn More",
@@ -72,7 +72,7 @@ const translations = {
         },
         footer: {
             rights: "All rights reserved.",
-            tagline: "Clarity through Construction"
+            tagline: "Clarity through Creation"
         },
         notifications: {
             success: "Message sent successfully! I'll get back to you soon."
@@ -88,7 +88,7 @@ const translations = {
             links: "Links"
         },
         hero: {
-            title: "Clareza através da Construção",
+            title: "Clareza através da Criação",
             subtitle: "Transformando ideias complexas em produtos inteligentes e sustentáveis através da intersecção entre engenharia, gestão e inovação.",
             cta1: "Entre em Contato",
             cta2: "Saiba Mais",
@@ -147,7 +147,7 @@ const translations = {
         },
         footer: {
             rights: "Todos os direitos reservados.",
-            tagline: "Clareza através da Construção"
+            tagline: "Clareza através da Criação"
         },
         notifications: {
             success: "Mensagem enviada com sucesso! Retornarei em breve."

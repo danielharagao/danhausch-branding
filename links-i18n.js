@@ -6,7 +6,7 @@ const linksTranslations = {
     en: {
         links: {
             subtitle: "Engineering • Management • Innovation",
-            tagline: "Clarity through Construction",
+            tagline: "Clarity through Creation",
             social: "Connect with me",
             linkedin: "Professional network",
             instagram: "Behind the scenes",
@@ -17,14 +17,15 @@ const linksTranslations = {
             eldorado: "Innovation & technology research",
             videotitle: "AI Multi-Agent Systems",
             video: "What are LLMs and how autonomous agents work",
+            whatsapp: "Talk with me",
             back: "Back to Main Site",
-            footer: "Clarity through Construction"
+            footer: "Clarity through Creation"
         }
     },
     pt: {
         links: {
             subtitle: "Engenharia • Gestão • Inovação",
-            tagline: "Clareza através da Construção",
+            tagline: "Clareza através da Criação",
             social: "Conecte-se comigo",
             linkedin: "Rede profissional",
             instagram: "Bastidores",
@@ -35,8 +36,9 @@ const linksTranslations = {
             eldorado: "Pesquisa em inovação e tecnologia",
             videotitle: "Agentes de IA Multiagentes",
             video: "O que são LLMs e como funcionam os agentes autônomos",
+            whatsapp: "Fale comigo",
             back: "Voltar ao Site Principal",
-            footer: "Clareza através da Construção"
+            footer: "Clareza através da Criação"
         }
     }
 };
