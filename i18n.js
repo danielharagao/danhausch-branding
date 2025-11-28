@@ -7,60 +7,66 @@ const translations = {
         nav: {
             home: "Home",
             about: "About",
-            products: "Products",
+            services: "Services",
             principles: "Principles",
             contact: "Contact",
             links: "Links"
         },
         hero: {
-            title: "Clarity through Creation",
-            subtitle: "Transforming complex ideas into intelligent, sustainable products through the intersection of engineering, management, and innovation.",
-            cta1: "Get in Touch",
+            title: "Your Path to Business Analyst Success",
+            subtitle: "Get the guidance and mentorship you need to start and succeed in your Business Analyst career. From entry-level to senior positions, I'll help you build the skills and confidence to excel.",
+            cta1: "Start Your Journey",
             cta2: "Learn More",
-            card1: "Innovation",
-            card2: "Engineering",
-            card3: "Strategy"
+            card1: "Analysis",
+            card2: "Communication",
+            card3: "Requirements"
         },
         about: {
             title: "About",
-            subtitle: "Bridging Technical Excellence with Business Strategy",
-            lead: "Technology only has value when it solves something real and gives time back to people.",
-            p1: "With 9 years of experience in technology, including 5 years at Instituto Eldorado, I've led and contributed to multi-million dollar projects for companies like Ambev, Lenovo, and Zoom. My work spans from complex corporate projects to bootstrapped SaaS products.",
-            p2: "I hold a foundation in Mathematics (logical reasoning), Administration (systemic vision), an MBA in Innovation from UFSCar, and postgraduate studies at MIT in AI Products. This multidisciplinary background allows me to transform complexity into clarity.",
+            subtitle: "Your Guide to Business Analyst Career Success",
+            lead: "A successful Business Analyst career is built on strong fundamentals, clear communication, and the ability to bridge business needs with technical solutions.",
+            p1: "As a Business Analyst practitioner and mentor, I've helped hundreds of professionals transition into and advance their BA careers. With extensive experience leading complex projects and working with major organizations, I understand what it takes to succeed in this field.",
+            p2: "My approach combines practical, real-world experience with structured mentorship. Whether you're just starting out or looking to advance, I provide personalized guidance tailored to your career goals and learning style.",
             cred1: "Years Experience",
-            cred2: "Major Projects",
-            cred3: "AI Products",
-            badge: "International Experience"
+            cred2: "Projects Led",
+            cred3: "Students Mentored",
+            badge: "Proven Track Record"
         },
-        products: {
-            title: "Products & Projects",
-            subtitle: "Building solutions that matter",
-            product1: "Advanced prospecting and automation platform designed to amplify sales teams' efficiency through intelligent automation.",
-            product2: "Intelligent navigation and workflow optimization system that brings clarity to complex operational processes.",
-            product3title: "Meditation Courses",
-            product3: "Structured meditation programs combining ancient wisdom with modern learning methodologies for sustainable practice.",
-            tag1: "Automation",
-            tag2: "Sales",
-            tag3: "Workflow",
-            tag4: "Education",
-            tag5: "Wellness"
+        services: {
+            title: "How I Help",
+            subtitle: "Your path to Business Analyst success",
+            service1title: "1-on-1 Coaching",
+            service1: "Personalized mentorship sessions to help you navigate your BA career journey, from entry-level to senior positions.",
+            service2title: "Career Transition Program",
+            service2: "Structured program designed for professionals transitioning into Business Analysis, covering fundamentals and practical skills.",
+            service3title: "BA Skills Training",
+            service3: "Comprehensive training on essential BA skills: requirements gathering, stakeholder management, documentation, and analysis techniques.",
+            tag1: "Mentorship",
+            tag2: "Career Growth",
+            tag3: "Personalized",
+            tag4: "Career Change",
+            tag5: "Structured",
+            tag6: "Fundamentals",
+            tag7: "Skills",
+            tag8: "Training",
+            tag9: "Practical"
         },
         principles: {
             title: "Core Principles",
-            subtitle: "Guiding philosophy for building meaningful technology",
-            principle1title: "Structure Before Scale",
-            principle1: "Build solid foundations before growing. Sustainable success requires strong architecture and clear processes.",
-            principle2title: "Clarity Before Speed",
-            principle2: "Deeply understand the problem before acting. Clarity eliminates waste and accelerates real progress.",
-            principle3title: "Automation with Purpose",
-            principle3: "Simplify repetitive tasks to amplify creative work. Technology should multiply human potential, not replace it."
+            subtitle: "Core principles for a successful BA career",
+            principle1title: "Foundation Before Specialization",
+            principle1: "Master the fundamentals of Business Analysis before diving into specialized tools or methodologies. Strong basics are the foundation of long-term success.",
+            principle2title: "Understanding Before Documentation",
+            principle2: "Deeply understand stakeholder needs and business context before writing requirements. Clear understanding leads to better solutions.",
+            principle3title: "Communication Before Tools",
+            principle3: "Develop strong communication and analytical skills before focusing on specific tools. Soft skills are what truly differentiate great BAs."
         },
         value: {
-            quote: "Technology should be a strategic asset, transforming complexity into operational clarity for professionals, technical leaders, and entrepreneurs."
+            quote: "A successful Business Analyst career starts with strong fundamentals, clear communication, and the ability to bridge business needs with technical solutions."
         },
         contact: {
             title: "Get in Touch",
-            subtitle: "Let's discuss how we can transform complexity into clarity",
+            subtitle: "Ready to start your Business Analyst career journey?",
             name: "Name",
             email: "Email",
             subject: "Subject",
@@ -72,7 +78,7 @@ const translations = {
         },
         footer: {
             rights: "All rights reserved.",
-            tagline: "Clarity through Creation"
+            tagline: "Your Path to BA Success"
         },
         notifications: {
             success: "Message sent successfully! I'll get back to you soon."
@@ -82,60 +88,66 @@ const translations = {
         nav: {
             home: "Início",
             about: "Sobre",
-            products: "Produtos",
+            services: "Serviços",
             principles: "Princípios",
             contact: "Contato",
             links: "Links"
         },
         hero: {
-            title: "Clareza através da Criação",
-            subtitle: "Transformando ideias complexas em produtos inteligentes e sustentáveis através da intersecção entre engenharia, gestão e inovação.",
-            cta1: "Entre em Contato",
+            title: "Seu Caminho para o Sucesso como Analista de Negócios",
+            subtitle: "Obtenha a orientação e mentoria que você precisa para iniciar e ter sucesso na sua carreira de Analista de Negócios. Do nível inicial ao sênior, vou ajudá-lo a desenvolver as habilidades e confiança para se destacar.",
+            cta1: "Inicie Sua Jornada",
             cta2: "Saiba Mais",
-            card1: "Inovação",
-            card2: "Engenharia",
-            card3: "Estratégia"
+            card1: "Análise",
+            card2: "Comunicação",
+            card3: "Requisitos"
         },
         about: {
             title: "Sobre",
-            subtitle: "Unindo Excelência Técnica com Estratégia de Negócios",
-            lead: "Tecnologia só tem valor quando resolve algo real e devolve tempo às pessoas.",
-            p1: "Com 9 anos de experiência em tecnologia, incluindo 5 anos no Instituto Eldorado, liderei e contribuí para projetos milionários para empresas como Ambev, Lenovo e Zoom. Meu trabalho abrange desde projetos corporativos complexos até produtos SaaS bootstrapped.",
-            p2: "Tenho formação em Matemática (raciocínio lógico), Administração (visão sistêmica), MBA em Inovação pela UFSCar e pós-graduação no MIT em Produtos de IA. Essa base multidisciplinar me permite transformar complexidade em clareza.",
+            subtitle: "Seu Guia para o Sucesso na Carreira de Analista de Negócios",
+            lead: "Uma carreira bem-sucedida como Analista de Negócios é construída sobre fundamentos sólidos, comunicação clara e a capacidade de conectar necessidades de negócios com soluções técnicas.",
+            p1: "Como praticante e mentor de Analista de Negócios, ajudei centenas de profissionais a fazer a transição e avançar em suas carreiras de BA. Com ampla experiência liderando projetos complexos e trabalhando com grandes organizações, entendo o que é necessário para ter sucesso nesta área.",
+            p2: "Minha abordagem combina experiência prática do mundo real com mentoria estruturada. Se você está apenas começando ou procurando avançar, forneço orientação personalizada adaptada aos seus objetivos de carreira e estilo de aprendizado.",
             cred1: "Anos de Experiência",
-            cred2: "Grandes Projetos",
-            cred3: "Produtos de IA",
-            badge: "Experiência Internacional"
+            cred2: "Projetos Liderados",
+            cred3: "Alunos Mentorados",
+            badge: "Histórico Comprovado"
         },
-        products: {
-            title: "Produtos & Projetos",
-            subtitle: "Construindo soluções que importam",
-            product1: "Plataforma avançada de prospecção e automação projetada para amplificar a eficiência de equipes de vendas através de automação inteligente.",
-            product2: "Sistema inteligente de navegação e otimização de workflow que traz clareza para processos operacionais complexos.",
-            product3title: "Cursos de Meditação",
-            product3: "Programas estruturados de meditação combinando sabedoria ancestral com metodologias modernas de aprendizagem para prática sustentável.",
-            tag1: "Automação",
-            tag2: "Vendas",
-            tag3: "Workflow",
-            tag4: "Educação",
-            tag5: "Bem-estar"
+        services: {
+            title: "Como Posso Ajudar",
+            subtitle: "Seu caminho para o sucesso como Analista de Negócios",
+            service1title: "Mentoria 1-on-1",
+            service1: "Sessões de mentoria personalizadas para ajudá-lo a navegar sua jornada de carreira de BA, do nível inicial ao sênior.",
+            service2title: "Programa de Transição de Carreira",
+            service2: "Programa estruturado projetado para profissionais que estão fazendo a transição para Análise de Negócios, cobrindo fundamentos e habilidades práticas.",
+            service3title: "Treinamento de Habilidades BA",
+            service3: "Treinamento abrangente sobre habilidades essenciais de BA: levantamento de requisitos, gestão de stakeholders, documentação e técnicas de análise.",
+            tag1: "Mentoria",
+            tag2: "Crescimento Profissional",
+            tag3: "Personalizado",
+            tag4: "Mudança de Carreira",
+            tag5: "Estruturado",
+            tag6: "Fundamentos",
+            tag7: "Habilidades",
+            tag8: "Treinamento",
+            tag9: "Prático"
         },
         principles: {
             title: "Princípios Fundamentais",
-            subtitle: "Filosofia orientadora para construir tecnologia com propósito",
-            principle1title: "Estrutura antes da Escala",
-            principle1: "Construir bases sólidas antes de crescer. Sucesso sustentável requer arquitetura forte e processos claros.",
-            principle2title: "Clareza antes da Velocidade",
-            principle2: "Compreender profundamente o problema antes de agir. Clareza elimina desperdício e acelera o progresso real.",
-            principle3title: "Automação com Propósito",
-            principle3: "Simplificar tarefas repetitivas para amplificar o trabalho criativo. Tecnologia deve multiplicar o potencial humano, não substituí-lo."
+            subtitle: "Princípios fundamentais para uma carreira de BA bem-sucedida",
+            principle1title: "Fundamentos antes da Especialização",
+            principle1: "Domine os fundamentos da Análise de Negócios antes de mergulhar em ferramentas ou metodologias especializadas. Bases sólidas são a fundação do sucesso de longo prazo.",
+            principle2title: "Compreensão antes da Documentação",
+            principle2: "Compreenda profundamente as necessidades dos stakeholders e o contexto de negócios antes de escrever requisitos. Compreensão clara leva a melhores soluções.",
+            principle3title: "Comunicação antes das Ferramentas",
+            principle3: "Desenvolva habilidades de comunicação e análise fortes antes de focar em ferramentas específicas. Habilidades interpessoais são o que realmente diferencia grandes BAs."
         },
         value: {
-            quote: "Tecnologia deve ser um ativo estratégico, transformando complexidade em clareza operacional para profissionais, líderes técnicos e empreendedores."
+            quote: "Uma carreira bem-sucedida como Analista de Negócios começa com fundamentos sólidos, comunicação clara e a capacidade de conectar necessidades de negócios com soluções técnicas."
         },
         contact: {
             title: "Entre em Contato",
-            subtitle: "Vamos discutir como podemos transformar complexidade em clareza",
+            subtitle: "Pronto para iniciar sua jornada de carreira como Analista de Negócios?",
             name: "Nome",
             email: "E-mail",
             subject: "Assunto",
@@ -147,7 +159,7 @@ const translations = {
         },
         footer: {
             rights: "Todos os direitos reservados.",
-            tagline: "Clareza através da Criação"
+            tagline: "Seu Caminho para o Sucesso como BA"
         },
         notifications: {
             success: "Mensagem enviada com sucesso! Retornarei em breve."
@@ -198,9 +210,9 @@ function updatePageLanguage() {
     
     // Update page title
     if (currentLang === 'pt') {
-        document.title = 'Daniel Hauschild de Aragão | Engenharia, Gestão & Inovação';
+        document.title = 'Daniel Hauschild de Aragão | Mentor de Carreira em Análise de Negócios';
     } else {
-        document.title = 'Daniel Hauschild de Aragão | Engineering, Management & Innovation';
+        document.title = 'Daniel Hauschild de Aragão | Business Analyst Career Mentor';
     }
     
     // Store preference

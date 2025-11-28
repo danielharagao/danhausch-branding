@@ -5,40 +5,42 @@
 const linksTranslations = {
     en: {
         links: {
-            subtitle: "Engineering • Management • Innovation",
-            tagline: "Clarity through Creation",
+            subtitle: "Business Analyst Career Mentor",
+            tagline: "Your Path to BA Success",
             social: "Connect with me",
             linkedin: "Professional network",
             instagram: "Behind the scenes",
             youtube: "Videos & tutorials",
-            projects: "Projects & Work",
-            navi: "Intelligent navigation & workflow optimization",
-            prospecta: "Sales automation & prospecting platform",
-            eldorado: "Innovation & technology research",
-            videotitle: "AI Multi-Agent Systems",
-            video: "What are LLMs and how autonomous agents work",
+            resources: "BA Career Resources",
+            coaching: "1-on-1 Coaching",
+            coachingdesc: "Personalized mentorship for your BA career journey",
+            contact: "Get Started",
+            contactdesc: "Start your Business Analyst career journey today",
+            videotitle: "BA Career Tips",
+            video: "Learn essential skills and strategies for your Business Analyst career",
             whatsapp: "Talk with me",
             back: "Back to Main Site",
-            footer: "Clarity through Creation"
+            footer: "Your Path to BA Success"
         }
     },
     pt: {
         links: {
-            subtitle: "Engenharia • Gestão • Inovação",
-            tagline: "Clareza através da Criação",
+            subtitle: "Mentor de Carreira em Análise de Negócios",
+            tagline: "Seu Caminho para o Sucesso como BA",
             social: "Conecte-se comigo",
             linkedin: "Rede profissional",
             instagram: "Bastidores",
             youtube: "Vídeos e tutoriais",
-            projects: "Projetos & Trabalho",
-            navi: "Navegação inteligente e otimização de workflow",
-            prospecta: "Automação de vendas e prospecção",
-            eldorado: "Pesquisa em inovação e tecnologia",
-            videotitle: "Agentes de IA Multiagentes",
-            video: "O que são LLMs e como funcionam os agentes autônomos",
+            resources: "Recursos de Carreira BA",
+            coaching: "Mentoria 1-on-1",
+            coachingdesc: "Mentoria personalizada para sua jornada de carreira de BA",
+            contact: "Comece Agora",
+            contactdesc: "Inicie sua jornada de carreira como Analista de Negócios hoje",
+            videotitle: "Dicas de Carreira BA",
+            video: "Aprenda habilidades e estratégias essenciais para sua carreira de Analista de Negócios",
             whatsapp: "Fale comigo",
             back: "Voltar ao Site Principal",
-            footer: "Clareza através da Criação"
+            footer: "Seu Caminho para o Sucesso como BA"
         }
     }
 };
@@ -80,9 +82,9 @@ function updatePageLanguageLinks() {
     
     // Update page title
     if (currentLangLinks === 'pt') {
-        document.title = 'Dan Hausch - Links';
+        document.title = 'Dan Hausch - Recursos de Carreira BA';
     } else {
-        document.title = 'Dan Hausch - Links';
+        document.title = 'Dan Hausch - Business Analyst Career Resources';
     }
     
     // Store preference

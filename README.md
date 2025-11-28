@@ -1,6 +1,6 @@
-# Dan Hausch - Professional Landing Page
+# Dan Hausch - Business Analyst Career Mentor
 
-A modern, bilingual landing page with light/dark mode support, showcasing Daniel Hauschild de Aragão's professional brand, combining engineering, management, and innovation.
+A modern, bilingual landing page with light/dark mode support, showcasing Daniel Hauschild de Aragão's Business Analyst career mentorship brand, helping professionals start and succeed in their BA careers.
 
 ![Version](https://img.shields.io/badge/version-2.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -36,19 +36,19 @@ A modern, bilingual landing page with light/dark mode support, showcasing Daniel
 
 ### Main Landing Page (`index.html`)
 Complete professional landing page with:
-- Hero section with animated cards
-- About section with credentials
-- Products showcase (Navi, ProspectaPro, Meditation Courses)
-- Core principles section
+- Hero section with animated cards focused on BA skills
+- About section highlighting BA mentorship experience
+- Services showcase (1-on-1 Coaching, Career Transition Program, BA Skills Training)
+- Core principles section for BA career success
 - Contact form
 - Social media links
 
 ### Links Page (`links.html`)
 Linktree-style page featuring:
 - Icon-only social media buttons (LinkedIn, Instagram, YouTube)
-- Project cards with descriptions
-- Featured video showcase
-- All links in one place
+- BA career resources and links
+- Coaching and mentorship offerings
+- Quick access to main site services
 
 ## 🛠️ Tech Stack
 
@@ -150,7 +150,7 @@ Visit: [danhausch.com](https://danhausch.com) *(update with your URL)*
 
 ## 📧 Contact
 
-**Daniel Hauschild de Aragão**
+**Daniel Hauschild de Aragão - Business Analyst Career Mentor**
 - LinkedIn: [danielharagao](https://www.linkedin.com/in/danielharagao/)
 - Instagram: [@danhausch](https://www.instagram.com/danhausch/)
 - YouTube: [@danielharagao](https://www.youtube.com/@danielharagao)
@@ -169,6 +169,6 @@ Built with care and attention to detail. Focused on:
 
 ---
 
-**"Clarity through Construction"** 🎯
+**"Your Path to BA Success"** 🎯
 
 © 2025 Daniel Hauschild de Aragão. All rights reserved.
