@@ -57,7 +57,15 @@
                 <div class="presale-form-container"
                     style="background: var(--card-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: 0 10px 40px var(--shadow-color);">
                     <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Garanta Sua Vaga VIP</h3>
-                    <form class="contact-form" id="presaleForm">
+                    <form class="contact-form" id="presaleForm" action="https://formsubmit.co/danielharagao@gmail.com"
+                        method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject"
+                            value="Nova inscrição na Lista de Espera - Business Analysis">
+                        <input type="hidden" name="_next"
+                            value="https://danielharagao.github.io/danhausch-branding/pages/ba-presale/">
                         <div class="form-group">
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" required placeholder="seu@email.com">
@@ -167,6 +175,7 @@
                 radio.addEventListener('change', toggleRoleField);
             }
 
+            /*
             document.getElementById('presaleForm').addEventListener('submit', function (e) {
                 e.preventDefault();
                 // Here you would typically send data to a backend
@@ -174,6 +183,7 @@
                 this.reset();
                 toggleRoleField(); // Reset visibility after form reset
             });
+            */
         });
     </script>
 </body>
