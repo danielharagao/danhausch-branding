@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-venda Curso Business Analysis | Daniel Hausch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-theme="dark">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../home/index.html" style="text-decoration: none;">
+                    <span class="logo-text">Dan Hausch</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <span class="theme-icon active" id="darkIcon">🌙</span>
+                    <span class="theme-icon" id="lightIcon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">
+                    <span class="gradient-text">Torne-se o Elo Estratégico entre Negócios e Tecnologia</span>
+                </h1>
+
+                <div class="benefits-list fade-in-delay-2" style="margin-top: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="color: #667EEA; font-size: 1.2rem;">✓</span>
+                        <span style="color: var(--text-secondary);">Salários competitivos e alta demanda global</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="color: #667EEA; font-size: 1.2rem;">✓</span>
+                        <span style="color: var(--text-secondary);">Liderança técnica e estratégica em projetos</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <span style="color: #667EEA; font-size: 1.2rem;">✓</span>
+                        <span style="color: var(--text-secondary);">Metodologia validada em grandes empresas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" style="height: auto; min-height: auto;">
+                <div class="presale-form-container"
+                    style="background: var(--card-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: 0 10px 40px var(--shadow-color);">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Garanta Sua Vaga VIP</h3>
+                    <form class="contact-form" id="presaleForm">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Você já atua como Business Analyst?</label>
+                            <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+                                <label
+                                    style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; cursor: pointer; color: var(--text-primary);">
+                                    <input type="radio" name="is_ba" value="sim" required
+                                        style="width: auto; margin: 0;"> Sim
+                                </label>
+                                <label
+                                    style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal; cursor: pointer; color: var(--text-primary);">
+                                    <input type="radio" name="is_ba" value="nao" required
+                                        style="width: auto; margin: 0;"> Não
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="role-group" style="display: none;">
+                            <label for="current_role">Cargo atual</label>
+                            <input type="text" id="current_role" name="current_role"
+                                placeholder="Ex: Analista de Sistemas">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Anos de experiência profissional</label>
+                            <input type="number" id="experience" name="experience" min="0" required placeholder="Ex: 2">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" style="margin-top: 1rem;">Entrar na Lista
+                            VIP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+            <p class="section-subtitle"
+                style="text-align: center; font-size: 0.9rem; margin-bottom: 2rem; opacity: 0.7;">
+                EXPERIÊNCIA COMPROVADA AO LONGO DE 1 DÉCADA EM GIGANTES DO MERCADO
+            </p>
+            <div class="company-logos">
+                <div class="company-logo"
+                    style="font-weight: 800; font-size: 1.8rem; letter-spacing: -1px; font-family: sans-serif;">Lenovo
+                </div>
+                <div class="company-logo" style="font-weight: 700; font-size: 1.5rem;">ambev</div>
+                <div class="company-logo" style="font-weight: 900; font-size: 1.8rem; letter-spacing: 2px;">WEG</div>
+                <div class="company-logo"
+                    style="font-weight: 600; font-size: 1.4rem; display: flex; align-items: center; gap: 0.5rem;">
+                    Instituto Eldorado
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-text">&copy; 2025 Daniel Hauschild de Aragão. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-tagline">Clarity through Creation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../shared/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const roleGroup = document.getElementById('role-group');
+            const roleInput = document.getElementById('current_role');
+            const radioButtons = document.getElementsByName('is_ba');
+
+            function toggleRoleField() {
+                let isNotBA = false;
+                for (const radio of radioButtons) {
+                    if (radio.checked && radio.value === 'nao') {
+                        isNotBA = true;
+                        break;
+                    }
+                }
+
+                if (isNotBA) {
+                    roleGroup.style.display = 'flex';
+                    roleInput.required = true;
+                } else {
+                    roleGroup.style.display = 'none';
+                    roleInput.required = false;
+                    roleInput.value = ''; // Clear value when hidden
+                }
+            }
+
+            // Add event listeners
+            for (const radio of radioButtons) {
+                radio.addEventListener('change', toggleRoleField);
+            }
+
+            document.getElementById('presaleForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                // Here you would typically send data to a backend
+                alert('Obrigado! Sua inscrição na pré-venda foi confirmada.');
+                this.reset();
+                toggleRoleField(); // Reset visibility after form reset
+            });
+        });
+    </script>
+</body>
+
+</html>
