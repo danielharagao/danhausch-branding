@@ -140,6 +140,27 @@
                 transform: translateY(-10px);
             }
         }
+
+        .qr-code-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            display: inline-block;
+        }
+
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .qr-code-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -176,6 +197,11 @@
             </p>
 
             <div class="action-buttons">
+                <div class="qr-code-container">
+                    <img src="../../assets/images/whatsapp-qr.png" alt="WhatsApp Group QR Code" class="qr-code">
+                    <p class="qr-code-label">Ou escaneie para entrar</p>
+                </div>
+
                 <a href="https://chat.whatsapp.com/G56Z6bR2hlKDVNKeNYMxgl" class="social-btn btn-whatsapp"
                     target="_blank">
                     <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
