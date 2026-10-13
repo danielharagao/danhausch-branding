@@ -4,7 +4,7 @@ Buildless website for the existing GitHub Pages repository. Serve the repository
 
 ## Current scope
 
-- Execution capacity positioning: business objectives first, technology as a means. Transformation and creation language is grounded in context, explicit choices and operational validation.
+- Balanced brand positioning: intelligence in motion, more time for business growth, improved operations and execution capacity. Strategy, engineering and applied intelligence are described through practical services and applications; technology remains a means.
 - Original hero line morph and Complexidade → Clareza → Movimento scroll narrative preserved.
 - Complete PT-BR/EN interface; only language preference is stored in localStorage. Monetary ranges remain explicitly BRL in both languages.
 - Five qualification questions, contact capture, consent and review/scheduling preview. Answers remain in page memory only. Submission is disabled and no appointment is booked.
