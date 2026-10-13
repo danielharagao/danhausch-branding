@@ -56,7 +56,7 @@
         label.append(input);host.append(label);
       }
       host.append(el('p',lang==='pt'?'Inclua o código do país (Brasil: +55).':'Include your country code (Brazil: +55).',{class:'hint',id:'phoneHint'}));
-      const label=el('label',null,{class:'consent'}), input=el('input',null,{type:'checkbox',name:'consent',required:''}); input.checked=contact.consent||false;label.append(input,el('span',tr(copy.consent)));host.append(label,el('a',tr(copy.privacy),{href:'#privacidade',class:'hint'}));
+      const label=el('label',null,{class:'consent'}), input=el('input',null,{type:'checkbox',name:'consent',required:''}); input.checked=contact.consent||false;label.append(input,el('span',tr(copy.consent)));host.append(label,el('a',tr(copy.privacy),{href:'privacidade.html',target:'_blank',rel:'noopener',class:'hint'}));
     } else {
       host.append(el('p',tr(copy.reviewHint),{class:'hint'})); const summary=el('dl',null,{class:'summary'});
       questions.forEach(q=>{const option=q.options.find(o=>o[0]===answers[q.key]);const row=el('div');row.append(el('dt',tr(q.title)),el('dd',option ? option[lang==='pt'?1:2] : ''));summary.append(row);});
@@ -65,13 +65,13 @@
     if(focus) heading.focus({preventScroll:true});
   }
   window.avenorScenes = () => lang === 'pt' ? [
-    ['01 / COMPLEXIDADE','Quando tudo<br>se acumula.','Demandas, processos e sistemas disputam tempo e atenção na rotina da empresa.'],
-    ['02 / CLAREZA','Conexões que<br>trazem clareza.','Organizamos fluxos, aproximamos informações e criamos espaço para decisões melhores.'],
-    ['03 / MOVIMENTO','Inteligência<br>em movimento.','Pessoas, processos e tecnologia trabalhando juntos para fazer o negócio avançar.']
+    ['01 / COMPLEXIDADE','Processos<br>desconectados.','Dados espalhados e tarefas repetidas dificultam o trabalho.'],
+    ['02 / CLAREZA','Uma operação<br>mais clara.','Conectamos informações e definimos como o trabalho deve acontecer.'],
+    ['03 / MOVIMENTO','Inteligência<br>em movimento.','Implementamos, testamos com a equipe e acompanhamos o uso.']
   ] : [
-    ['01 / COMPLEXITY','When everything<br>adds up.','Demands, processes and systems compete for time and attention in everyday operations.'],
-    ['02 / CLARITY','Connections that<br>bring clarity.','Organize workflows, bring information together and make room for better decisions.'],
-    ['03 / MOMENTUM','Intelligence<br>in motion.','People, processes and technology working together to move the business forward.']
+    ['01 / COMPLEXITY','Disconnected<br>processes.','Scattered data and repetitive tasks make work harder.'],
+    ['02 / CLARITY','Clearer<br>operations.','We connect information and define how work should happen.'],
+    ['03 / MOMENTUM','Intelligence<br>in motion.','We implement, test with the team and track use.']
   ];
   function staticScenes() {
     document.querySelector('.static-scenes')?.remove();
@@ -83,12 +83,7 @@
   function language(value) {
     saveContact(); lang=value; document.documentElement.lang=lang==='pt'?'pt-BR':'en';
     try{localStorage.setItem('avenor-language',lang);}catch{}
-    document.querySelectorAll('[data-i18n]').forEach(node=>{node.innerHTML=window.AVENOR_COPY[node.dataset.i18n][lang];});
-    document.querySelectorAll('[data-lang]').forEach(node=>node.setAttribute('aria-pressed',String(node.dataset.lang===lang)));
-    document.querySelector('nav').setAttribute('aria-label',lang==='pt'?'Navegação principal':'Main navigation');
     document.querySelector('.journey').setAttribute('aria-label',lang==='pt'?'Complexidade, clareza e movimento':'Complexity, clarity and momentum');
-    document.title=lang==='pt'?'Avenor — Inteligência em movimento':'Avenor — Intelligence in motion';
-    document.querySelector('meta[name="description"]').content=lang==='pt'?'Estratégia, tecnologia e inteligência aplicada para transformar a operação e abrir espaço para o crescimento.':'Strategy, technology and applied intelligence to transform operations and make room for business growth.';
     window.avenorLanguageChanged=true; render(); staticScenes(); window.dispatchEvent(new Event('scroll'));
   }
   form.addEventListener('change',e=>{if(step<5 && e.target.type==='radio') answers[questions[step].key]=e.target.value;});
@@ -105,7 +100,7 @@
     events('step_completed');step++;render(true);events(step===6?'review_reached':'step_viewed');
   });
   document.getElementById('back').addEventListener('click',()=>{saveContact();if(step>0){step--;render(true);events('step_viewed');}});
-  document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>{language(button.dataset.lang);events('language_changed');}));
+  window.addEventListener('avenor:language', event=>{language(event.detail);events('language_changed');});
   document.querySelectorAll('a[href="#contato"]').forEach(link=>link.addEventListener('click',()=>events('funnel_started')));
   matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',staticScenes);
   language(lang);

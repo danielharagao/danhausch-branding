@@ -3,17 +3,9 @@ window.AVENOR_COPY = {
     "pt": "Pular para conteúdo",
     "en": "Skip to content"
   },
-  "navvisao": {
-    "pt": "Visão",
-    "en": "Vision"
-  },
   "navservicos": {
-    "pt": "Capacidades",
-    "en": "Capabilities"
-  },
-  "navmetodo": {
-    "pt": "Método",
-    "en": "Approach"
+    "pt": "Serviços",
+    "en": "Services"
   },
   "heroey": {
     "pt": "ESTRATÉGIA + ENGENHARIA + INTELIGÊNCIA APLICADA",
@@ -24,92 +16,64 @@ window.AVENOR_COPY = {
     "en": "Intelligence<br>in <em>motion.</em>"
   },
   "herop": {
-    "pt": "Estratégia, tecnologia e inteligência aplicada para transformar a operação e abrir espaço para o crescimento da sua empresa.",
-    "en": "Strategy, technology and applied intelligence to transform operations and make room for business growth."
+    "pt": "Melhoramos processos e conectamos sistemas para sua empresa atender mais, reduzir retrabalho e crescer.",
+    "en": "We improve processes and connect systems so your business can serve more customers, reduce rework and grow."
   },
   "cta1": {
     "pt": "Vamos conversar ↗",
     "en": "Let’s talk ↗"
   },
   "cta2": {
-    "pt": "Conheça a abordagem ↓",
-    "en": "Explore our approach ↓"
-  },
-  "point0": {
-    "pt": "01 / Menos tempo em tarefas repetitivas",
-    "en": "01 / Less time on repetitive work"
-  },
-  "point1": {
-    "pt": "02 / Mais fluidez entre equipes e processos",
-    "en": "02 / Smoother work across teams and processes"
-  },
-  "point2": {
-    "pt": "03 / Informação útil para decidir",
-    "en": "03 / Useful information for decisions"
-  },
-  "point3": {
-    "pt": "04 / Estrutura para atender e crescer",
-    "en": "04 / Capacity to serve customers and grow"
-  },
-  "visaoey": {
-    "pt": "01 / ESPAÇO PARA CRESCER",
-    "en": "01 / ROOM TO GROW"
-  },
-  "visaoh": {
-    "pt": "Mais tempo para crescer.<br>Mais recursos para realizar.",
-    "en": "More time to grow.<br>More ways to move forward."
-  },
-  "visaop": {
-    "pt": "Entre atender clientes, coordenar equipes e manter a operação funcionando, nem sempre sobra tempo para desenvolver o negócio. A Avenor combina visão de gestão e capacidade técnica para melhorar processos, conectar sistemas e construir soluções que ampliam sua capacidade de execução.",
-    "en": "Serving customers, coordinating teams and keeping operations running can leave little time to develop the business. Avenor combines management insight and technical expertise to improve processes, connect systems and build solutions that expand your capacity to execute."
+    "pt": "O que fazemos ↓",
+    "en": "What we do ↓"
   },
   "card0ey": {
     "pt": "01 / ESTRATÉGIA",
     "en": "01 / STRATEGY"
   },
   "card0h": {
-    "pt": "Entender e priorizar.",
-    "en": "Understand and prioritize."
+    "pt": "Diagnóstico e prioridades",
+    "en": "Assessment and priorities"
   },
   "card0p": {
-    "pt": "Analisamos a operação, identificamos oportunidades e organizamos as iniciativas considerando impacto, esforço e viabilidade.",
-    "en": "We assess operations, identify opportunities and prioritize initiatives by impact, effort and feasibility."
+    "pt": "Mapeamos processos e avaliamos o que vale mudar, considerando impacto, esforço e custo.",
+    "en": "We map processes and assess what to change based on impact, effort and cost."
   },
   "card1ey": {
     "pt": "02 / ENGENHARIA",
     "en": "02 / ENGINEERING"
   },
   "card1h": {
-    "pt": "Desenhar e construir.",
-    "en": "Design and build."
+    "pt": "Automações e integrações",
+    "en": "Automation and integrations"
   },
   "card1p": {
-    "pt": "Desenvolvemos automações, integrações e soluções com IA para apoiar as equipes e melhorar o trabalho no dia a dia.",
-    "en": "We develop automation, integrations and AI solutions to support teams and improve everyday work."
+    "pt": "Conectamos sistemas, automatizamos rotinas e aplicamos IA em tarefas como atendimento e análise de documentos.",
+    "en": "We connect systems, automate routine work and apply AI to tasks such as customer service and document analysis."
   },
   "card2ey": {
     "pt": "03 / EVOLUÇÃO",
     "en": "03 / EVOLUTION"
   },
   "card2h": {
-    "pt": "Acompanhar e melhorar.",
-    "en": "Monitor and improve."
+    "pt": "Acompanhamento",
+    "en": "Ongoing support"
   },
   "card2p": {
-    "pt": "Acompanhamos a adoção e o desempenho das soluções. Ajustamos o que precisa e desenvolvemos novas possibilidades a partir do uso real.",
-    "en": "We track adoption and performance, refine what needs attention and develop new possibilities from real-world use."
+    "pt": "Testamos as entregas na operação, apoiamos a equipe e ajustamos as soluções com base no uso.",
+    "en": "We test solutions in operations, support the team and refine them based on use."
   },
   "servicosey": {
-    "pt": "02 / COMO ATUAMOS",
-    "en": "02 / HOW WE WORK"
+    "pt": "O QUE FAZEMOS",
+    "en": "WHAT WE DO"
   },
   "servicosh": {
-    "pt": "Da ideia<br>à operação.",
-    "en": "From idea<br>to operations."
+    "pt": "Consultoria que chega<br>à implementação.",
+    "en": "Consulting through<br>to implementation."
   },
   "servicosp": {
-    "pt": "Consultoria e implementação se encontram para resolver desafios do negócio. Da análise dos processos à construção e evolução das soluções.",
-    "en": "Consulting and implementation come together to address business challenges, from process analysis to building and refining solutions."
+    "pt": "Analisamos a operação e construímos soluções com sua equipe. Processos, automações e IA entram conforme o problema que precisamos resolver.",
+    "en": "We assess operations and build solutions with your team. We use process design, automation and AI to address the problem at hand."
   },
   "step0h": {
     "pt": "Entender",
@@ -148,79 +112,215 @@ window.AVENOR_COPY = {
     "en": "03 / OUR APPROACH"
   },
   "metodoh": {
-    "pt": "Clareza em cada etapa.",
-    "en": "Clarity at every stage."
+    "pt": "Como trabalhamos",
+    "en": "How we work"
   },
   "metodop": {
-    "pt": "Trabalhamos perto de quem conhece a operação, com entregas graduais e critérios claros para avaliar os resultados.",
-    "en": "We work closely with the people who know the operation, using incremental delivery and clear criteria to assess results."
-  },
-  "use0": {
-    "pt": "Faturamento: atendimento, qualificação de leads e propostas",
-    "en": "Revenue: customer engagement, lead qualification and proposals"
-  },
-  "use1": {
-    "pt": "Custos: automação de rotinas e redução de retrabalho",
-    "en": "Costs: routine automation and less rework"
-  },
-  "use2": {
-    "pt": "Capacidade: fluxos operacionais e sistemas integrados",
-    "en": "Capacity: operational workflows and connected systems"
-  },
-  "use3": {
-    "pt": "Gestão e riscos: indicadores, informação e controles",
-    "en": "Management and risk: metrics, information and controls"
-  },
-  "aplicacoesey": {
-    "pt": "04 / INTELIGÊNCIA APLICADA",
-    "en": "04 / APPLIED INTELLIGENCE"
-  },
-  "aplicacoesh": {
-    "pt": "Resultados de negócio.<br>Soluções no dia a dia.",
-    "en": "Business outcomes.<br>Everyday solutions."
-  },
-  "aplicacoesp": {
-    "pt": "O trabalho pode começar no comercial, no administrativo ou na gestão. Estas são algumas frentes em que processos, dados e tecnologia podem contribuir.",
-    "en": "Work can begin in sales, administration or management. These are some areas where processes, data and technology can make a difference."
+    "pt": "Definimos o escopo, entregamos por etapas e verificamos o resultado com quem usa a solução.",
+    "en": "We define scope, deliver in stages and review results with the people using the solution."
   },
   "formey": {
-    "pt": "VAMOS CONVERSAR",
-    "en": "LET’S TALK"
+    "pt": "CONTATO",
+    "en": "CONTACT"
   },
   "formh": {
-    "pt": "Vamos falar<br>sobre sua empresa.",
-    "en": "Let’s talk<br>about your business."
+    "pt": "Vamos conversar.",
+    "en": "Let’s talk."
   },
   "formp": {
-    "pt": "Conte um pouco sobre seu momento e o que gostaria de melhorar. São cinco perguntas rápidas para preparar nossa conversa.",
-    "en": "Tell us a little about your business and what you’d like to improve. Five quick questions will help us prepare for our conversation."
+    "pt": "Responda cinco perguntas sobre sua empresa para preparar nossa conversa.",
+    "en": "Answer five questions about your business to help us prepare for a conversation."
   },
   "preview": {
-    "pt": "Prévia do funil: envio e agendamento ainda não estão conectados. Seus dados não serão enviados nem armazenados nesta versão.",
-    "en": "Funnel preview: submission and scheduling are not connected yet. Your details will not be sent or stored in this version."
+    "pt": "Versão de avaliação. Envio e agenda ainda não estão disponíveis; os dados ficam só nesta página até você recarregar.",
+    "en": "Review version. Submission and scheduling are not available yet; details stay on this page until you reload."
   },
   "privacyh": {
     "pt": "Privacidade e seus dados",
     "en": "Privacy and your data"
   },
-  "privacyp": {
-    "pt": "Controlador informado: DANIEL HAUSCHILD DE ARAGAO CONSULTORIA E TREINAMENTO LTDA (DANHAUSCH), CNPJ 64.283.135/0001-94. O formulário destina-se a avaliar sua demanda e entrar em contato sobre uma possível contratação. O envio permanece desativado até a definição do serviço de coleta, operadores e prazo de retenção. Não utilizamos seus dados para marketing sem autorização separada.",
-    "en": "Provided data controller: DANIEL HAUSCHILD DE ARAGAO CONSULTORIA E TREINAMENTO LTDA (DANHAUSCH), CNPJ 64.283.135/0001-94. The form is intended to assess your needs and contact you about a possible engagement. Submission remains disabled until the collection service, processors and retention period are defined. We do not use your details for marketing without separate permission."
-  },
   "rights": {
     "pt": "Para solicitar acesso, correção, exclusão ou esclarecer o tratamento dos dados, contate",
     "en": "To request access, correction, deletion or clarification about data handling, contact"
   },
-  "local": {
-    "pt": "Apenas sua preferência de idioma fica salva neste navegador. Eventos básicos do funil são emitidos localmente, sem dados pessoais; nenhum serviço externo de analytics está conectado.",
-    "en": "Only your language preference is saved in this browser. Basic funnel events are emitted locally without personal data; no external analytics service is connected."
-  },
   "footerp": {
-    "pt": "Inteligência em movimento.<br>Estratégia, engenharia e inteligência aplicada.",
-    "en": "Intelligence in motion.<br>Strategy, engineering and applied intelligence."
+    "pt": "Consultoria em gestão e tecnologia.",
+    "en": "Management and technology consulting."
   },
   "footerlink": {
     "pt": "Privacidade",
     "en": "Privacy"
+  },
+  "navhome": {
+    "pt": "Início",
+    "en": "Home"
+  },
+  "navabout": {
+    "pt": "Sobre",
+    "en": "About"
+  },
+  "navcontact": {
+    "pt": "Contato",
+    "en": "Contact"
+  },
+  "footercompany": {
+    "pt": "Empresa",
+    "en": "Company"
+  },
+  "footercontact": {
+    "pt": "Fale com a Avenor",
+    "en": "Contact Avenor"
+  },
+  "footerlegal": {
+    "pt": "Todos os direitos reservados.",
+    "en": "All rights reserved."
+  },
+  "footerlocation": {
+    "pt": "Campinas, São Paulo · Brasil",
+    "en": "Campinas, São Paulo · Brazil"
+  },
+  "applications": {
+    "pt": "Atendimento comercial · Propostas · Rotinas administrativas · Dados e indicadores",
+    "en": "Customer service · Proposals · Administrative workflows · Data and metrics"
+  },
+  "aboutey": {
+    "pt": "SOBRE A AVENOR",
+    "en": "ABOUT AVENOR"
+  },
+  "abouth": {
+    "pt": "Gestão e tecnologia<br>no mesmo trabalho.",
+    "en": "Management and technology<br>working together."
+  },
+  "aboutp": {
+    "pt": "A Avenor atua na análise de processos e na implementação de soluções para empresas. O trabalho inclui automações, integração de sistemas e inteligência artificial aplicada à operação.",
+    "en": "Avenor analyzes processes and implements business solutions, including automation, systems integration and AI applied to operations."
+  },
+  "missionh": {
+    "pt": "Missão",
+    "en": "Mission"
+  },
+  "missionp": {
+    "pt": "Ampliar a capacidade de execução das empresas com processos bem desenhados e tecnologia que funcione na rotina.",
+    "en": "Expand businesses’ capacity to execute through well-designed processes and technology that works in everyday operations."
+  },
+  "visionh": {
+    "pt": "Visão",
+    "en": "Vision"
+  },
+  "visionp": {
+    "pt": "Construir uma consultoria que reúna análise de negócio e implementação, da identificação do problema ao uso da solução.",
+    "en": "Build a consultancy that combines business analysis and implementation, from identifying the problem to putting the solution to use."
+  },
+  "valuesh": {
+    "pt": "Valores",
+    "en": "Values"
+  },
+  "value0h": {
+    "pt": "Entender antes de propor",
+    "en": "Understand before proposing"
+  },
+  "value0p": {
+    "pt": "Conhecer o contexto da empresa e ouvir quem faz o trabalho.",
+    "en": "Learn the business context and listen to the people doing the work."
+  },
+  "value1h": {
+    "pt": "Clareza nas escolhas",
+    "en": "Clear decisions"
+  },
+  "value1p": {
+    "pt": "Explicar escopo, custos, limites e critérios de sucesso.",
+    "en": "Explain scope, costs, limitations and success criteria."
+  },
+  "value2h": {
+    "pt": "Responsabilidade na implementação",
+    "en": "Responsible implementation"
+  },
+  "value2p": {
+    "pt": "Cuidar dos dados, testar as soluções e manter supervisão humana onde ela é necessária.",
+    "en": "Protect data, test solutions and retain human oversight where needed."
+  },
+  "value3h": {
+    "pt": "Aprender com o uso",
+    "en": "Learn from use"
+  },
+  "value3p": {
+    "pt": "Acompanhar o que foi entregue e corrigir o que não funciona.",
+    "en": "Follow up on what was delivered and fix what does not work."
+  },
+  "founderey": {
+    "pt": "FUNDADOR",
+    "en": "FOUNDER"
+  },
+  "founderh": {
+    "pt": "Daniel Hauschild de Aragão",
+    "en": "Daniel Hauschild de Aragão"
+  },
+  "founderp": {
+    "pt": "Há dez anos, Daniel resolve problemas com tecnologia. Sua trajetória inclui dez grandes projetos e uma dezena de projetos menores em inovação, SaaS e GTM Engineering, além de uma passagem pela Shiftn.",
+    "en": "Daniel has spent ten years solving problems with technology. His experience includes ten large projects and another ten smaller projects in innovation, SaaS and GTM Engineering, as well as time at Shiftn."
+  },
+  "privacyey": {
+    "pt": "PRIVACIDADE",
+    "en": "PRIVACY"
+  },
+  "privacyintro": {
+    "pt": "Este aviso descreve o que acontece com os dados nesta versão do site.",
+    "en": "This notice explains what happens to data in this version of the website."
+  },
+  "privacycontrollerh": {
+    "pt": "Responsável pelo tratamento",
+    "en": "Data controller"
+  },
+  "privacycollectionh": {
+    "pt": "Formulário e armazenamento",
+    "en": "Form and storage"
+  },
+  "privacycollectionp": {
+    "pt": "Nesta versão, o formulário não envia dados. As respostas e informações de contato ficam na memória da página e são apagadas ao recarregar ou fechar a aba. Somente a preferência de idioma fica salva no navegador.",
+    "en": "In this version, the form does not send data. Answers and contact details stay in page memory and are cleared when you reload or close the tab. Only your language preference is saved in the browser."
+  },
+  "privacyactivationh": {
+    "pt": "Antes de ativar o envio",
+    "en": "Before enabling submission"
+  },
+  "privacyactivationp": {
+    "pt": "O serviço de coleta, os operadores e o prazo de retenção ainda serão definidos. Atualizaremos este aviso antes de ativar o envio. A finalidade será avaliar a solicitação e entrar em contato sobre os serviços da Avenor. Qualquer autorização de marketing será solicitada separadamente.",
+    "en": "The collection service, processors and retention period have yet to be defined. We will update this notice before enabling submission. The purpose will be to assess requests and contact people about Avenor’s services. Marketing permission will be requested separately."
+  },
+  "privacyanalyticsh": {
+    "pt": "Medição de uso",
+    "en": "Usage measurement"
+  },
+  "privacyanalyticsp": {
+    "pt": "O site gera eventos locais de navegação pelo formulário, sem nome, e-mail, telefone ou respostas. Nenhum serviço externo de analytics está conectado.",
+    "en": "The website generates local form-navigation events without names, emails, phone numbers or answers. No external analytics service is connected."
+  },
+  "privacyrightsh": {
+    "pt": "Solicitações sobre dados",
+    "en": "Data requests"
+  },
+  "privacydate": {
+    "pt": "Versão do aviso: 13 de outubro de 2026.",
+    "en": "Notice version: October 13, 2026."
+  },
+  "foundercompaniesh": {
+    "pt": "Experiência em projetos com",
+    "en": "Project experience with"
+  },
+  "foundereducationh": {
+    "pt": "Formação",
+    "en": "Education"
+  },
+  "foundercredential0": {
+    "pt": "Especialista em IA pelo MIT",
+    "en": "AI specialist trained at MIT"
+  },
+  "foundercredential1": {
+    "pt": "MBA em Inovação pela UFSCar",
+    "en": "MBA in Innovation, UFSCar"
+  },
+  "foundercredential2": {
+    "pt": "Administrador de empresas com base em matemática",
+    "en": "Business administrator with a background in mathematics"
   }
 };
