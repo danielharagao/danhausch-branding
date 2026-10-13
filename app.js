@@ -14,7 +14,7 @@
     name: pair('Nome', 'Name'), company: pair('Empresa', 'Company'), email: pair('E-mail profissional', 'Business email'), whatsapp: pair('WhatsApp com código do país', 'WhatsApp including country code'),
     consent: pair('Autorizo o uso dos dados informados para avaliar minha demanda e entrar em contato sobre esta solicitação.', 'I authorize the use of the details provided to assess my needs and contact me about this request.'),
     privacy: pair('Ler aviso de privacidade', 'Read privacy notice'),
-    reviewTitle: pair('Seu próximo passo está desenhado.', 'Your next move is taking shape.'),
+    reviewTitle: pair('Revise suas respostas.', 'Review your answers.'),
     reviewHint: pair('Revise suas respostas. Na versão conectada, o envio confirmado será seguido pela escolha de um horário. Esta prévia não envia dados nem reserva horários.', 'Review your answers. In the connected version, confirmed submission will be followed by choosing a time. This preview does not send details or reserve appointments.'),
     send: pair('Envio e agenda disponíveis em breve', 'Submission and scheduling coming soon'),
     appointment: pair('Agendamento', 'Scheduling'), appointmentHint: pair('A agenda será conectada após definirmos o serviço. Nenhuma reunião foi marcada.', 'The calendar will be connected once the service is defined. No meeting has been booked.'),
@@ -65,13 +65,13 @@
     if(focus) heading.focus({preventScroll:true});
   }
   window.avenorScenes = () => lang === 'pt' ? [
-    ['01 / COMPLEXIDADE','Ambição encontra<br>complexidade.','Seu objetivo está claro. O desafio é conectar pessoas, processos e recursos para realizá-lo.'],
-    ['02 / CLAREZA','Clareza para<br>construir.','Transformamos o objetivo em prioridades, capacidades e um caminho de execução.'],
-    ['03 / MOVIMENTO','Capacidade<br>em movimento.','Colocamos soluções em operação e evoluímos com evidências, junto com sua empresa.']
+    ['01 / COMPLEXIDADE','Quando tudo<br>se acumula.','Demandas, processos e sistemas disputam tempo e atenção na rotina da empresa.'],
+    ['02 / CLAREZA','Conexões que<br>trazem clareza.','Organizamos fluxos, aproximamos informações e criamos espaço para decisões melhores.'],
+    ['03 / MOVIMENTO','Inteligência<br>em movimento.','Pessoas, processos e tecnologia trabalhando juntos para fazer o negócio avançar.']
   ] : [
-    ['01 / COMPLEXITY','Ambition meets<br>complexity.','Your goal is clear. The challenge is connecting people, processes and resources to achieve it.'],
-    ['02 / CLARITY','Clarity to<br>build.','Turn your goal into priorities, capabilities and a path to execution.'],
-    ['03 / MOMENTUM','Capacity<br>in motion.','Put solutions to work and evolve with evidence, alongside your business.']
+    ['01 / COMPLEXITY','When everything<br>adds up.','Demands, processes and systems compete for time and attention in everyday operations.'],
+    ['02 / CLARITY','Connections that<br>bring clarity.','Organize workflows, bring information together and make room for better decisions.'],
+    ['03 / MOMENTUM','Intelligence<br>in motion.','People, processes and technology working together to move the business forward.']
   ];
   function staticScenes() {
     document.querySelector('.static-scenes')?.remove();
@@ -87,8 +87,8 @@
     document.querySelectorAll('[data-lang]').forEach(node=>node.setAttribute('aria-pressed',String(node.dataset.lang===lang)));
     document.querySelector('nav').setAttribute('aria-label',lang==='pt'?'Navegação principal':'Main navigation');
     document.querySelector('.journey').setAttribute('aria-label',lang==='pt'?'Complexidade, clareza e movimento':'Complexity, clarity and momentum');
-    document.title=lang==='pt'?'Avenor — Capacidade em movimento':'Avenor — Capacity in motion';
-    document.querySelector('meta[name="description"]').content=lang==='pt'?'Estratégia, engenharia e inteligência aplicada para ampliar sua capacidade de execução.':'Strategy, engineering and applied intelligence to expand your capacity to execute.';
+    document.title=lang==='pt'?'Avenor — Inteligência em movimento':'Avenor — Intelligence in motion';
+    document.querySelector('meta[name="description"]').content=lang==='pt'?'Estratégia, tecnologia e inteligência aplicada para transformar a operação e abrir espaço para o crescimento.':'Strategy, technology and applied intelligence to transform operations and make room for business growth.';
     window.avenorLanguageChanged=true; render(); staticScenes(); window.dispatchEvent(new Event('scroll'));
   }
   form.addEventListener('change',e=>{if(step<5 && e.target.type==='radio') answers[questions[step].key]=e.target.value;});

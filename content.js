@@ -20,180 +20,180 @@ window.AVENOR_COPY = {
     "en": "STRATEGY + ENGINEERING + APPLIED INTELLIGENCE"
   },
   "heroh": {
-    "pt": "Sua ambição.<br>Mais <em>capacidade.</em>",
-    "en": "Your ambition.<br>Greater <em>capacity.</em>"
+    "pt": "Inteligência<br>em <em>movimento.</em>",
+    "en": "Intelligence<br>in <em>motion.</em>"
   },
   "herop": {
-    "pt": "Você sabe onde quer chegar. A Avenor conecta competências, tecnologia e recursos para ampliar sua capacidade de execução — e avançar com mais clareza e menos atrito.",
-    "en": "You know where you want to go. Avenor brings together expertise, technology and resources to expand your ability to execute — and move forward with greater clarity and less friction."
+    "pt": "Estratégia, tecnologia e inteligência aplicada para transformar a operação e abrir espaço para o crescimento da sua empresa.",
+    "en": "Strategy, technology and applied intelligence to transform operations and make room for business growth."
   },
   "cta1": {
-    "pt": "Vamos construir seu próximo passo ↗",
-    "en": "Let’s build your next move ↗"
+    "pt": "Vamos conversar ↗",
+    "en": "Let’s talk ↗"
   },
   "cta2": {
     "pt": "Conheça a abordagem ↓",
     "en": "Explore our approach ↓"
   },
   "point0": {
-    "pt": "01 / Pessoas com mais tempo para o que importa",
-    "en": "01 / More time for work that matters"
+    "pt": "01 / Menos tempo em tarefas repetitivas",
+    "en": "01 / Less time on repetitive work"
   },
   "point1": {
-    "pt": "02 / Processos que acompanham seu crescimento",
-    "en": "02 / Processes that keep pace with growth"
+    "pt": "02 / Mais fluidez entre equipes e processos",
+    "en": "02 / Smoother work across teams and processes"
   },
   "point2": {
-    "pt": "03 / Sistemas que trabalham juntos",
-    "en": "03 / Systems that work together"
+    "pt": "03 / Informação útil para decidir",
+    "en": "03 / Useful information for decisions"
   },
   "point3": {
-    "pt": "04 / Decisões apoiadas em evidências",
-    "en": "04 / Decisions grounded in evidence"
+    "pt": "04 / Estrutura para atender e crescer",
+    "en": "04 / Capacity to serve customers and grow"
   },
   "visaoey": {
-    "pt": "01 / EXPANDIR O POSSÍVEL",
-    "en": "01 / EXPAND WHAT’S POSSIBLE"
+    "pt": "01 / ESPAÇO PARA CRESCER",
+    "en": "01 / ROOM TO GROW"
   },
   "visaoh": {
-    "pt": "O destino é seu.<br>A capacidade, ampliamos juntos.",
-    "en": "Your destination.<br>More capacity to get there."
+    "pt": "Mais tempo para crescer.<br>Mais recursos para realizar.",
+    "en": "More time to grow.<br>More ways to move forward."
   },
   "visaop": {
-    "pt": "Não começamos pela ferramenta. Começamos pelo resultado que você busca e pelas capacidades necessárias para alcançá-lo. Estratégia vira desenho; desenho vira operação.",
-    "en": "We start with the result you want and the capabilities required to achieve it. Strategy becomes design; design becomes operations."
+    "pt": "Entre atender clientes, coordenar equipes e manter a operação funcionando, nem sempre sobra tempo para desenvolver o negócio. A Avenor combina visão de gestão e capacidade técnica para melhorar processos, conectar sistemas e construir soluções que ampliam sua capacidade de execução.",
+    "en": "Serving customers, coordinating teams and keeping operations running can leave little time to develop the business. Avenor combines management insight and technical expertise to improve processes, connect systems and build solutions that expand your capacity to execute."
   },
   "card0ey": {
-    "pt": "01 / DIREÇÃO",
-    "en": "01 / DIRECTION"
+    "pt": "01 / ESTRATÉGIA",
+    "en": "01 / STRATEGY"
   },
   "card0h": {
-    "pt": "Tornar o próximo passo claro.",
-    "en": "Make the next move clear."
+    "pt": "Entender e priorizar.",
+    "en": "Understand and prioritize."
   },
   "card0p": {
-    "pt": "Conectamos seus objetivos à realidade da operação. Mapeamos capacidades, dependências e prioridades para orientar escolhas.",
-    "en": "Connect business goals to operational reality. Map capabilities, dependencies and priorities to guide decisions."
+    "pt": "Analisamos a operação, identificamos oportunidades e organizamos as iniciativas considerando impacto, esforço e viabilidade.",
+    "en": "We assess operations, identify opportunities and prioritize initiatives by impact, effort and feasibility."
   },
   "card1ey": {
-    "pt": "02 / CONSTRUÇÃO",
-    "en": "02 / BUILD"
+    "pt": "02 / ENGENHARIA",
+    "en": "02 / ENGINEERING"
   },
   "card1h": {
-    "pt": "Criar o que faz avançar.",
-    "en": "Build what moves you forward."
+    "pt": "Desenhar e construir.",
+    "en": "Design and build."
   },
   "card1p": {
-    "pt": "Desenhamos processos, automações e integrações. Aplicamos IA onde ela ajuda a resolver um problema concreto, com supervisão humana.",
-    "en": "Design processes, automation and integrations. Apply AI where it addresses a concrete problem, with human oversight."
+    "pt": "Desenvolvemos automações, integrações e soluções com IA para apoiar as equipes e melhorar o trabalho no dia a dia.",
+    "en": "We develop automation, integrations and AI solutions to support teams and improve everyday work."
   },
   "card2ey": {
     "pt": "03 / EVOLUÇÃO",
-    "en": "03 / EVOLVE"
+    "en": "03 / EVOLUTION"
   },
   "card2h": {
-    "pt": "Sustentar o movimento.",
-    "en": "Sustain the momentum."
+    "pt": "Acompanhar e melhorar.",
+    "en": "Monitor and improve."
   },
   "card2p": {
-    "pt": "Definimos indicadores e rotinas de acompanhamento para avaliar o que funciona, ajustar e expandir com critério.",
-    "en": "Define metrics and review routines to evaluate what works, refine it and expand deliberately."
+    "pt": "Acompanhamos a adoção e o desempenho das soluções. Ajustamos o que precisa e desenvolvemos novas possibilidades a partir do uso real.",
+    "en": "We track adoption and performance, refine what needs attention and develop new possibilities from real-world use."
   },
   "servicosey": {
-    "pt": "02 / CAPACIDADES QUE SE SOMAM",
-    "en": "02 / CAPABILITIES THAT COME TOGETHER"
+    "pt": "02 / COMO ATUAMOS",
+    "en": "02 / HOW WE WORK"
   },
   "servicosh": {
-    "pt": "Transformar intenção<br>em execução.",
-    "en": "Turn intent<br>into execution."
+    "pt": "Da ideia<br>à operação.",
+    "en": "From idea<br>to operations."
   },
   "servicosp": {
-    "pt": "Da decisão à entrega, combinamos visão de negócio e construção técnica. O escopo nasce do seu objetivo.",
-    "en": "From decision to delivery, we combine business insight with technical craft. Your objective defines the scope."
+    "pt": "Consultoria e implementação se encontram para resolver desafios do negócio. Da análise dos processos à construção e evolução das soluções.",
+    "en": "Consulting and implementation come together to address business challenges, from process analysis to building and refining solutions."
   },
   "step0h": {
     "pt": "Entender",
     "en": "Understand"
   },
   "step0p": {
-    "pt": "Objetivos, contexto e restrições.",
-    "en": "Goals, context and constraints."
+    "pt": "Conhecer o negócio, as pessoas e os processos.",
+    "en": "Understand the business, its people and its processes."
   },
   "step1h": {
     "pt": "Desenhar",
     "en": "Design"
   },
   "step1p": {
-    "pt": "Capacidades, prioridades e critérios de sucesso.",
-    "en": "Capabilities, priorities and success criteria."
+    "pt": "Definir a solução, o escopo e como medir o resultado.",
+    "en": "Define the solution, scope and how to measure results."
   },
   "step2h": {
     "pt": "Implementar",
     "en": "Implement"
   },
   "step2p": {
-    "pt": "Entregas graduais, validação e adoção.",
-    "en": "Incremental delivery, validation and adoption."
+    "pt": "Construir, testar e apoiar a adoção pela equipe.",
+    "en": "Build, test and support team adoption."
   },
   "step3h": {
     "pt": "Evoluir",
     "en": "Evolve"
   },
   "step3p": {
-    "pt": "Evidências, ajustes e próximos movimentos.",
-    "en": "Evidence, refinement and next moves."
+    "pt": "Acompanhar resultados e aperfeiçoar a solução.",
+    "en": "Track results and refine the solution."
   },
   "metodoey": {
-    "pt": "03 / CRIATIVIDADE COM CRITÉRIO",
-    "en": "03 / CREATIVITY WITH RIGOR"
+    "pt": "03 / NOSSO MÉTODO",
+    "en": "03 / OUR APPROACH"
   },
   "metodoh": {
-    "pt": "Possibilidades novas.<br>Decisões fundamentadas.",
-    "en": "New possibilities.<br>Grounded decisions."
+    "pt": "Clareza em cada etapa.",
+    "en": "Clarity at every stage."
   },
   "metodop": {
-    "pt": "Criamos com você, tornamos escolhas explícitas e validamos na operação. Sem promessas de resultado antes de entender o contexto.",
-    "en": "We build with you, make tradeoffs explicit and validate in operations. We understand the context before making outcome commitments."
+    "pt": "Trabalhamos perto de quem conhece a operação, com entregas graduais e critérios claros para avaliar os resultados.",
+    "en": "We work closely with the people who know the operation, using incremental delivery and clear criteria to assess results."
   },
   "use0": {
-    "pt": "Faturamento / qualificação comercial e propostas",
-    "en": "Revenue / lead qualification and proposals"
+    "pt": "Faturamento: atendimento, qualificação de leads e propostas",
+    "en": "Revenue: customer engagement, lead qualification and proposals"
   },
   "use1": {
-    "pt": "Custos / rotinas e fluxos administrativos",
-    "en": "Costs / administrative workflows"
+    "pt": "Custos: automação de rotinas e redução de retrabalho",
+    "en": "Costs: routine automation and less rework"
   },
   "use2": {
-    "pt": "Capacidade / integração e automação operacional",
-    "en": "Capacity / operational integration and automation"
+    "pt": "Capacidade: fluxos operacionais e sistemas integrados",
+    "en": "Capacity: operational workflows and connected systems"
   },
   "use3": {
-    "pt": "Gestão e riscos / dados, controles e acompanhamento",
-    "en": "Management and risk / data, controls and monitoring"
+    "pt": "Gestão e riscos: indicadores, informação e controles",
+    "en": "Management and risk: metrics, information and controls"
   },
   "aplicacoesey": {
-    "pt": "04 / ONDE A CAPACIDADE GANHA FORMA",
-    "en": "04 / WHERE CAPACITY TAKES SHAPE"
+    "pt": "04 / INTELIGÊNCIA APLICADA",
+    "en": "04 / APPLIED INTELLIGENCE"
   },
   "aplicacoesh": {
-    "pt": "Seu objetivo orienta<br>o que construímos.",
-    "en": "Your goal guides<br>what we build."
+    "pt": "Resultados de negócio.<br>Soluções no dia a dia.",
+    "en": "Business outcomes.<br>Everyday solutions."
   },
   "aplicacoesp": {
-    "pt": "Exemplos de aplicação. Viabilidade e impacto são avaliados em cada contexto.",
-    "en": "Illustrative applications. Feasibility and impact are assessed for each context."
+    "pt": "O trabalho pode começar no comercial, no administrativo ou na gestão. Estas são algumas frentes em que processos, dados e tecnologia podem contribuir.",
+    "en": "Work can begin in sales, administration or management. These are some areas where processes, data and technology can make a difference."
   },
   "formey": {
-    "pt": "SEU PRÓXIMO MOVIMENTO",
-    "en": "YOUR NEXT MOVE"
+    "pt": "VAMOS CONVERSAR",
+    "en": "LET’S TALK"
   },
   "formh": {
-    "pt": "O que você<br>quer realizar?",
-    "en": "What do you<br>want to achieve?"
+    "pt": "Vamos falar<br>sobre sua empresa.",
+    "en": "Let’s talk<br>about your business."
   },
   "formp": {
-    "pt": "Cinco perguntas para conectar seu objetivo às capacidades de que precisa. Depois, seus dados de contato e uma conversa.",
-    "en": "Five questions to connect your goal with the capabilities you need. Then, your contact details and a conversation."
+    "pt": "Conte um pouco sobre seu momento e o que gostaria de melhorar. São cinco perguntas rápidas para preparar nossa conversa.",
+    "en": "Tell us a little about your business and what you’d like to improve. Five quick questions will help us prepare for our conversation."
   },
   "preview": {
     "pt": "Prévia do funil: envio e agendamento ainda não estão conectados. Seus dados não serão enviados nem armazenados nesta versão.",
@@ -216,8 +216,8 @@ window.AVENOR_COPY = {
     "en": "Only your language preference is saved in this browser. Basic funnel events are emitted locally without personal data; no external analytics service is connected."
   },
   "footerp": {
-    "pt": "Estratégia, engenharia e inteligência aplicada.<br>Capacidade para seu próximo movimento.",
-    "en": "Strategy, engineering and applied intelligence.<br>Capacity for your next move."
+    "pt": "Inteligência em movimento.<br>Estratégia, engenharia e inteligência aplicada.",
+    "en": "Intelligence in motion.<br>Strategy, engineering and applied intelligence."
   },
   "footerlink": {
     "pt": "Privacidade",
