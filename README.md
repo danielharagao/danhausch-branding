@@ -30,16 +30,17 @@ The Avenor flow is retained under Danhausch branding:
 4. Decision authority.
 5. Investment range.
 6. Contact details and explicit contact consent.
-7. Review, followed by a prefilled WhatsApp link.
+7. Review with direct answer editing, followed by a prefilled WhatsApp link.
 
 Only language preference is persisted in localStorage. Answers and contact details remain in page memory. The WhatsApp link opens the message for the visitor to review and send; the site does not claim delivery or book meetings. Local `danhausch:analytics` events contain only event, step and language and have no remote analytics destination.
 
 ## Layout
 
 - `index.html`, `sobre.html`, `privacidade.html`: bilingual consulting pages.
-- `assets/site-20261016T001007Z/`: current home assets and qualification controller.
-- `assets/site-20261015T230105Z/`: assets still referenced by the live about/privacy pages.
-- `produtos/`, `profissionais/`, `empresas/`, `ai-portfolio/`: existing live catalog and supporting pages, in Portuguese.
+- `assets/site-20261028-ux/`: shared navigation, bilingual copy, current styles and qualification controller.
+- `assets/site-20261015T230105Z/` and `assets/site-20261016T001007Z/`: retained original live assets.
+- `produtos/`, `profissionais/`, `empresas/`, `ai-portfolio/`: catalog and supporting pages; products, professional and business pages support PT-BR/English.
+- `landing-pages/ba.html`: BA workshop page for the separate `lp.danhausch.com` host, with an interest list while no session date is confirmed.
 - `styles.css`, `assets/img/`: existing catalog styles and photos.
 - `form/`: existing diagnostic form, separate from the home qualification flow.
 - `backend/diagnostic/`: source for the existing diagnostic email/PDF API.
@@ -53,3 +54,5 @@ Production is served by Nginx from `/var/www/html/danhausch-com` on `187.77.48.1
 The `/form/` page also requires the existing `/form/api/` backend proxy. Static local hosting does not provide that API. See [ops/README.md](ops/README.md). The home qualification flow uses WhatsApp and does not depend on it.
 
 Production staging copies, credentials, environment files and visitor data are excluded. Previous versions of the BA mentoring site remain available in this repository's Git history. Avenor branches are preserved under `archive/avenor/*`.
+
+The 2026-10-28 UX changes and deployment scope are documented in [docs/ux-release-20261028.md](docs/ux-release-20261028.md). Email and WhatsApp remain mandatory. Browser checks also cover visible step headings, review edits/cancellation, catalog localization and the undated workshop interest flow.

@@ -28,7 +28,7 @@ for file, page in pages.items():
         url = urlsplit(link)
         if url.scheme or url.netloc:
             continue
-        target = ROOT / unquote(url.path).lstrip('/') if url.path.startswith('/') else file.parent / unquote(url.path)
+        target = file if not url.path else ROOT / unquote(url.path).lstrip('/') if url.path.startswith('/') else file.parent / unquote(url.path)
         target = target.resolve()
         if target.is_dir():
             target /= 'index.html'
@@ -36,10 +36,33 @@ for file, page in pages.items():
             failures.append(f'{file.relative_to(ROOT)}: missing {link}')
         elif url.fragment and target in pages and unquote(url.fragment) not in pages[target].ids:
             failures.append(f'{file.relative_to(ROOT)}: missing fragment {link}')
-copy = json.loads(subprocess.check_output(['node', '-e', "global.window={};require('./assets/site-20261016T001007Z/content.js');console.log(JSON.stringify(window.DANHAUSCH_COPY));"], cwd=ROOT))
+copy = json.loads(subprocess.check_output(['node', '-e', "global.window={};require('./assets/site-20261028-ux/content.js');console.log(JSON.stringify(window.DANHAUSCH_COPY));"], cwd=ROOT))
 for page in pages.values():
     for key in page.keys:
         if key not in copy or not all(copy[key].get(lang) for lang in ['pt', 'en']):
             failures.append(f'{page.file.relative_to(ROOT)}: missing translation {key}')
 assert not failures, '\n'.join(failures)
 print(f'PASS: {len(pages)} HTML pages, local assets, fragments and translation keys')
+
+# Every meaningful text node in the catalog must have an English counterpart.
+catalog_copy = json.loads(subprocess.check_output(['node', '-e', "global.window={};require('./assets/site-20261028-ux/catalog-copy.js');console.log(JSON.stringify(window.DANHAUSCH_CATALOG_COPY));"], cwd=ROOT))
+class CatalogText(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.inside = False
+        self.missing = []
+    def handle_starttag(self, tag, attributes):
+        if tag == 'main':
+            self.inside = True
+    def handle_endtag(self, tag):
+        if tag == 'main':
+            self.inside = False
+    def handle_data(self, text):
+        value = text.strip()
+        if self.inside and any(c.isalpha() for c in value) and value not in catalog_copy and value not in ['BA Pro', 'AgPlace', 'Fractional Head of AI']:
+            self.missing.append(value)
+for name in ['produtos/index.html', 'profissionais/index.html', 'empresas/index.html', 'landing-pages/ba.html']:
+    parser = CatalogText()
+    parser.feed((ROOT/name).read_text())
+    assert not parser.missing, f'{name}: missing English copy {parser.missing}'
+print('PASS: complete English copy for product, professional, business and BA workshop pages')

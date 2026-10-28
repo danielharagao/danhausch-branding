@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Workshop de Business Analysis | Dan Hausch</title>
+  <meta name="description" content="Workshop prático de Business Analysis: transforme problemas de negócio em decisões, prioridades e requisitos acionáveis. Ao vivo, com no máximo 5 participantes.">
+  <link rel="canonical" href="https://lp.danhausch.com/ba">
+  <meta property="og:title" content="Workshop de Business Analysis">
+  <meta property="og:description" content="3 horas ao vivo para diagnosticar problemas, priorizar com critério e escrever requisitos acionáveis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lp.danhausch.com/ba">
+  <meta property="og:image" content="https://lp.danhausch.com/assets/img/dan-lp/dan-editorial-photo.jpg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQY9Y5HJGZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KQY9Y5HJGZ');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1463288792272622');
+    fbq('track', 'PageView');
+  </script>
+  <style>
+    :root{
+      --bg:#f4efe5;--paper:#fffdf8;--ink:#18211e;--muted:#64706a;--line:rgba(24,33,30,.14);
+      --green:#24594c;--green-dark:#173d34;--blue:#244b69;--orange:#c85f32;--soft:#e4eee8;--max:1160px
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:linear-gradient(90deg,rgba(24,33,30,.035) 1px,transparent 1px),linear-gradient(0deg,rgba(24,33,30,.035) 1px,transparent 1px),linear-gradient(135deg,#fbf8f1 0%,var(--bg) 62%,#e5ece6 100%);background-size:32px 32px,32px 32px,auto;line-height:1.55}
+    a{color:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:0 auto}.topbar{padding:13px 0;border-bottom:1px solid var(--line);background:rgba(255,253,248,.82);backdrop-filter:blur(12px);position:relative;z-index:4}.topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:.01em}.topbar a{color:var(--muted);font-size:.9rem;text-decoration:none}.hero{min-height:88vh;display:grid;align-items:center;padding:54px 0 42px}.hero-grid{display:grid;gap:38px;align-items:center}@media(min-width:940px){.hero-grid{grid-template-columns:1.04fr .96fr}}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:.78rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 5px rgba(200,95,50,.12)}h1,h2,h3,p{margin-top:0}h1{max-width:800px;margin:16px 0 18px;font-size:clamp(2.45rem,5.6vw,5.35rem);line-height:.98;letter-spacing:-.035em}h2{font-size:clamp(1.7rem,3.2vw,2.7rem);line-height:1.08;margin:0 0 14px;letter-spacing:-.02em}h3{font-size:1.08rem;line-height:1.25;margin:0 0 8px}.lead{max-width:720px;color:#37433e;font-size:clamp(1.08rem,1.8vw,1.3rem)}.sub,.muted,.card p,.panel p,li{color:var(--muted)}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 19px;border:1px solid transparent;border-radius:9px;text-decoration:none;font-weight:900;line-height:1.15;cursor:pointer;font:inherit}.btn-primary{background:var(--green);color:#fff;box-shadow:0 16px 34px rgba(36,89,76,.23)}.btn-primary:hover{background:var(--green-dark)}.btn-primary:disabled{opacity:.62;cursor:wait}.btn-secondary{border-color:var(--line);background:rgba(255,253,248,.72);color:var(--ink)}.hero-facts{display:grid;gap:10px;margin-top:26px}@media(min-width:650px){.hero-facts{grid-template-columns:repeat(3,1fr)}}.fact{padding:13px 14px;border:1px solid var(--line);border-radius:9px;background:rgba(255,253,248,.67);color:var(--muted);font-size:.92rem}.fact strong{display:block;color:var(--ink);font-size:1rem}
+    .hero-card{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:rgba(255,253,248,.8);box-shadow:0 30px 90px rgba(24,33,30,.17)}.portrait{position:relative;min-height:520px;background:radial-gradient(circle at 18% 18%,rgba(36,89,76,.16),transparent 38%),linear-gradient(145deg,#e7ded0,#f9f5ec)}.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}.portrait-label{position:absolute;left:20px;right:20px;bottom:20px;padding:16px;border:1px solid rgba(255,255,255,.6);border-radius:10px;background:rgba(255,253,248,.84);backdrop-filter:blur(9px)}.portrait-label strong{display:block;font-size:1.15rem}.portrait-label span{color:var(--muted);font-size:.9rem}.offer-strip{display:grid;gap:9px;padding:16px;border-top:1px solid var(--line);background:#fffdf8}@media(min-width:560px){.offer-strip{grid-template-columns:1.1fr .9fr}}.offer-strip strong{display:block}.offer-strip span{color:var(--muted);font-size:.88rem}
+    section{padding:66px 0}.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.38)}.grid-2,.grid-3,.grid-4{display:grid;gap:15px}@media(min-width:820px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}}.card,.panel{padding:20px;border:1px solid var(--line);border-radius:10px;background:rgba(255,253,248,.72)}.card strong,.panel strong,li strong{color:var(--ink)}.problem-card{min-height:155px}.problem-card .index{display:inline-flex;margin-bottom:20px;color:var(--orange);font-size:.78rem;font-weight:900;letter-spacing:.08em}.step{display:flex;gap:14px;align-items:flex-start}.num{display:inline-flex;flex:0 0 34px;height:34px;align-items:center;justify-content:center;border-radius:8px;background:rgba(36,75,105,.12);color:var(--blue);font-weight:900}.timeline{display:grid;gap:12px;margin-top:24px}.timeline-row{display:grid;gap:8px;padding:17px 18px;border-left:4px solid var(--green);background:rgba(255,253,248,.72);border-radius:0 10px 10px 0}@media(min-width:720px){.timeline-row{grid-template-columns:150px 1fr;align-items:start}}.timeline-row time{font-weight:900;color:var(--green)}.timeline-row p{margin:0;color:var(--muted)}ul{margin:12px 0 0;padding-left:1.15rem}li+li{margin-top:9px}
+    .result-panel{display:grid;gap:26px;align-items:center;padding:28px;border:1px solid rgba(36,89,76,.24);border-radius:12px;background:linear-gradient(135deg,rgba(36,89,76,.1),rgba(255,253,248,.8))}@media(min-width:900px){.result-panel{grid-template-columns:1.1fr .9fr}}.checklist{display:grid;gap:9px}.check{display:flex;gap:9px;align-items:flex-start}.check:before{content:"✓";color:var(--green);font-weight:950}.price-panel{display:grid;gap:24px;align-items:center;padding:28px;border:1px solid rgba(200,95,50,.28);border-radius:12px;background:linear-gradient(135deg,rgba(200,95,50,.09),rgba(255,253,248,.86))}@media(min-width:900px){.price-panel{grid-template-columns:1.15fr .85fr}}.date-chip{display:inline-flex;padding:8px 11px;border-radius:999px;background:var(--soft);color:var(--green-dark);font-weight:900}.price{margin:9px 0 5px;font-size:clamp(2.5rem,5vw,4rem);line-height:1;font-weight:950;letter-spacing:-.04em}.status{min-height:24px;margin:12px 0 0;color:var(--muted);font-size:.92rem}.status.error{color:#a4372d}.status.success{color:var(--green)}details{border:1px solid var(--line);border-radius:10px;background:rgba(255,253,248,.68);padding:15px 17px}details+details{margin-top:10px}summary{cursor:pointer;font-weight:850}details p{margin:10px 0 0;color:var(--muted)}.footer{padding:34px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:var(--green)}
+    @media(max-width:620px){.container{width:min(var(--max),calc(100% - 28px))}.topbar-inner{align-items:flex-start}.hero{min-height:auto;padding-top:42px}.btn{width:100%}.portrait{min-height:440px}section{padding:48px 0}.price-panel,.result-panel{padding:21px}}
+  .topbar{background:#111d32;color:white}.topbar a{color:white}.topbar .brand{font:800 25px/1.2 Inter,system-ui,sans-serif;letter-spacing:-1.5px}.topbar .brand span{color:#a8b7f5}.btn-primary{background:#111d32}.btn-primary:hover{background:#26334c}.price-panel{border-color:#a8b7f5;background:#e5e8f0}.date-chip{background:#cdd5f4;color:#17233b}html{scroll-padding-top:24px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+<link rel="stylesheet" href="https://danhausch.com/assets/site-20261028-ux/shell.css"></head>
+<body data-page="workshop" class="workshop-page" data-page-type="workshop" data-offer="workshop_ba_pro">
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1463288792272622&ev=PageView&noscript=1" alt=""></noscript>
+  <header class="dh-header"><a href="https://danhausch.com/" class="dh-brand" aria-label="Danhausch, início">danhausch<span>.</span></a><nav class="dh-nav" id="siteNavigation" aria-label="Navegação principal"><a href="https://danhausch.com/#servicos" data-i18n="navservicos">Serviços</a><a href="https://danhausch.com/produtos/" data-i18n="navproducts">Produtos</a><a href="https://danhausch.com/sobre.html" data-i18n="navabout">Sobre</a><a href="https://danhausch.com/#contato" data-i18n="navcontact">Contato</a></nav><div class="dh-controls"><button type="button" class="language-switch" role="switch" aria-checked="false" aria-label="Usar inglês" id="languageSwitch"><span class="switch-thumb" aria-hidden="true"></span><span class="switch-option" aria-hidden="true">🇧🇷</span><span class="switch-option" aria-hidden="true">🇺🇸</span></button><button type="button" id="menuToggle" class="dh-menu-toggle" aria-controls="siteNavigation" aria-expanded="false" data-i18n="navmenu">Menu</button></div></header>
+  <a class="dh-skip" href="#main" data-i18n="skip">Pular para conteúdo</a><main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Workshop ao vivo · Business Analysis</span>
+          <h1>Transforme problemas de negócio em decisões e requisitos que a equipe consegue executar.</h1>
+          <p class="lead">Em 3 horas ao vivo, você pratica como enquadrar o problema, priorizar com critérios e tirar requisitos do campo da opinião — com uma turma de no máximo 5 pessoas.</p>
+          <div class="actions">
+            <a class="btn btn-primary payment-cta" href="#inscricao">Entrar na lista de interesse</a>
+            <a class="btn btn-secondary" href="#programa">Ver agenda das 3 horas</a>
+          </div>
+          <div class="hero-facts" aria-label="Resumo da turma">
+            <div class="fact"><strong>Próxima turma</strong>Data e horário ainda não definidos</div>
+            <div class="fact"><strong>3 horas ao vivo</strong>Horário de Brasília · data a confirmar</div>
+            <div class="fact"><strong>Máximo 5 pessoas</strong>Espaço para aplicação e perguntas</div>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Daniel Hausch e resumo do workshop">
+          <div class="portrait">
+            <img src="https://lp.danhausch.com/assets/img/dan-lp/dan-editorial-photo.jpg" alt="Daniel Hausch">
+            <div class="portrait-label"><strong>Dan Hausch</strong><span>10+ anos em análise de negócios, produto, projetos e transformação.</span></div>
+          </div>
+          <div class="offer-strip"><div><strong>Workshop Pro de BA</strong><span>Receba aviso quando a data for definida</span></div><div><strong>Lista de interesse</strong><span>Sem cobrança ou reserva de vaga</span></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container grid-4">
+        <article class="card problem-card"><span class="index">01 · DIAGNÓSTICO</span><h3>Separar pedido de problema</h3><p>Distinguir sintoma, causa, impacto e a decisão que precisa ser tomada.</p></article>
+        <article class="card problem-card"><span class="index">02 · PRIORIDADE</span><h3>Sair da guerra de opinião</h3><p>Organizar impacto, esforço, risco e urgência para defender escolhas.</p></article>
+        <article class="card problem-card"><span class="index">03 · REQUISITO</span><h3>Reduzir ambiguidade</h3><p>Escrever resultados, regras e critérios que negócio e tecnologia entendem.</p></article>
+        <article class="card problem-card"><span class="index">04 · ALINHAMENTO</span><h3>Comunicar decisões</h3><p>Levar contexto, trade-offs e próximos passos com objetividade.</p></article>
+      </div>
+    </section>
+
+    <section id="programa">
+      <div class="container">
+        <span class="eyebrow">Agenda prática</span>
+        <h2>Três horas para organizar o raciocínio do BA do problema à execução.</h2>
+        <p class="sub">A agenda conecta diagnóstico, priorização, requisitos e comunicação. Os exemplos podem ser adaptados aos contextos trazidos pela turma.</p>
+        <p class="sub">Os blocos abaixo indicam a duração do programa. O horário da próxima turma será informado quando a data for definida.</p><div class="timeline">
+          <article class="timeline-row"><time>00–30 min</time><div><h3>Enquadramento do problema</h3><p>Pedido, sintoma, causa, impacto, objetivo e decisão necessária.</p></div></article>
+          <article class="timeline-row"><time>30–65 min</time><div><h3>Discovery e stakeholders</h3><p>Perguntas que revelam restrições, conflitos, riscos e critérios de sucesso.</p></div></article>
+          <article class="timeline-row"><time>65–100 min</time><div><h3>Priorização com critérios</h3><p>Impacto, esforço, risco e urgência aplicados a escolhas reais.</p></div></article>
+          <article class="timeline-row"><time>100–145 min</time><div><h3>Requisitos acionáveis</h3><p>Resultados esperados, regras de negócio, cenários e critérios de aceite.</p></div></article>
+          <article class="timeline-row"><time>145–180 min</time><div><h3>Decisão e comunicação executiva</h3><p>Trade-offs, recomendação, próximos passos e revisão com a turma.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container result-panel">
+        <div><span class="eyebrow">Aplicação</span><h2>Você sai com uma estrutura reutilizável para conduzir demandas com mais clareza.</h2><p class="sub">Não é uma promessa de resultado automático. É método, prática guiada e repertório para aplicar no seu contexto.</p></div>
+        <div class="checklist">
+          <div class="check">Roteiro para enquadrar problemas de negócio</div>
+          <div class="check">Critérios para priorizar e defender escolhas</div>
+          <div class="check">Estrutura de requisito e critérios de aceite</div>
+          <div class="check">Modelo de comunicação de decisão e próximos passos</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-2">
+        <article class="panel"><h2>Para quem é</h2><ul><li><strong>Business Analysts, POs e PMs</strong> que precisam organizar demandas e decisões.</li><li><strong>Produto, processos, projetos e operações</strong> trabalhando entre negócio e tecnologia.</li><li><strong>Profissionais técnicos</strong> que precisam conversar com stakeholders e reduzir retrabalho.</li></ul></article>
+        <article class="panel"><h2>Para quem não é</h2><ul><li>Quem procura fórmula pronta sem considerar contexto.</li><li>Quem quer apenas teoria, sem participar dos exercícios.</li><li>Quem busca promessa de promoção, salário ou resultado garantido.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="band" id="inscricao">
+      <div class="container">
+        <div class="price-panel">
+          <div><span class="date-chip">Próxima turma · data a definir</span><h2 style="margin-top:16px">Uma turma pequena para feedback de verdade.</h2><p class="sub">A próxima turma terá no máximo 5 participantes. Data e horário ainda não foram definidos. Entre na lista de interesse pelo WhatsApp para receber o aviso e decidir se quer se inscrever.</p></div>
+          <div><p class="price">R$ 697</p><p class="sub">Valor do workshop. As inscrições serão abertas quando houver data e horário confirmados.</p><a class="btn btn-primary" id="interestLink" href="https://wa.me/5519976298141?text=Ol%C3%A1%2C%20Daniel.%20Quero%20entrar%20na%20lista%20de%20interesse%20do%20Workshop%20de%20Business%20Analysis%20e%20receber%20o%20aviso%20quando%20a%20data%20for%20definida." target="_blank" rel="noopener noreferrer">Quero receber o aviso pelo WhatsApp ↗</a><p class="status">Você confirma o envio no WhatsApp. Entrar na lista não gera cobrança nem reserva vaga.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <details><summary>O workshop é ao vivo?</summary><p>Sim. São 3 horas ao vivo, no horário de Brasília.</p></details>
+        <details><summary>Sou iniciante em Business Analysis. Consigo acompanhar?</summary><p>Sim. A estrutura parte do problema e avança até critérios e requisitos. Participar dos exercícios é mais importante do que dominar uma ferramenta específica.</p></details>
+        <details><summary>Já trabalho como BA. Ainda faz sentido?</summary><p>Faz sentido se você quer revisar seu método de diagnóstico, priorização, requisitos e comunicação usando uma sequência integrada e prática.</p></details>
+        <details><summary>Quando será a próxima turma?</summary><p>A data e o horário ainda não estão definidos. Você pode pedir um aviso pelo WhatsApp; quando houver uma turma confirmada, poderá conferir a agenda antes de decidir sobre a inscrição.</p></details><details><summary>A lista de interesse reserva minha vaga?</summary><p>Não. A lista serve para receber o aviso da nova turma. Não há cobrança nem reserva de vaga nesta etapa.</p></details>
+        <details><summary>Há promessa de promoção ou resultado financeiro?</summary><p>Não. O workshop entrega método e prática guiada. Os resultados dependem do contexto e da aplicação de cada participante.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="dh-footer"><div class="dh-footer-inner"><div><a href="https://danhausch.com/" class="dh-brand" aria-label="Danhausch">danhausch<span>.</span></a><p data-i18n="footerp">Consultoria em gestão e tecnologia.</p></div><nav class="footer-nav" aria-label="Empresa"><a href="https://danhausch.com/produtos/" data-i18n="navproducts">Produtos</a><a href="https://danhausch.com/empresas/" data-i18n="navbusiness">Para empresas</a><a href="https://danhausch.com/profissionais/" data-i18n="navprofessionals">Para profissionais</a><a href="https://danhausch.com/sobre.html" data-i18n="navabout">Sobre</a><a href="https://danhausch.com/privacidade.html" data-i18n="footerlink">Privacidade</a></nav><div><a class="dh-contact-link" href="https://wa.me/5519976298141" data-i18n="footerwhatsapp">Conversar pelo WhatsApp ↗</a><p data-i18n="footerlocation">Campinas, São Paulo · Brasil</p></div></div><div class="dh-legal">© 2026 Danhausch · DANIEL HAUSCHILD DE ARAGAO CONSULTORIA E TREINAMENTO LTDA · CNPJ 64.283.135/0001-94</div></footer>
+
+
+<script src="https://danhausch.com/assets/site-20261028-ux/content.js"></script><script src="https://danhausch.com/assets/site-20261028-ux/catalog-copy.js"></script><script src="https://danhausch.com/assets/site-20261028-ux/site.js"></script></body>
+</html>
