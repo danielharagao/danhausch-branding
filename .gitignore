@@ -17,3 +17,13 @@ npm-debug.log*
 *.tmp
 .cache/
 
+
+# Development and browser checks
+node_modules/
+test-results/
+playwright-report/
+.venv/
+__pycache__/
+.env
+.env.*
+*.pdf
