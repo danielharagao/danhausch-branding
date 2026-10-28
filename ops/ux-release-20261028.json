@@ -1,0 +1,95 @@
+{
+  "host": "root@187.77.48.10",
+  "files": [
+    {
+      "source": "index.html",
+      "target": "/var/www/html/danhausch-com/index.html",
+      "before": "ad96cc7ec060e40da6bafc88ee8905b14d5f0c4aa1669e322efd188bccf2fc71",
+      "sha256": "bc8307ae2d937118577f5baec86c3e1c47b2361f4a260476e7f7261d6f99704d"
+    },
+    {
+      "source": "sobre.html",
+      "target": "/var/www/html/danhausch-com/sobre.html",
+      "before": "6b8f33f15fa406f87c3b177f92c22ddf91897cab681b0111db4afa4b9ebcd2d3",
+      "sha256": "ec77a769b7b0330cc35834310a232f8f3883d4822e078c346a5ac858f31e94e2"
+    },
+    {
+      "source": "privacidade.html",
+      "target": "/var/www/html/danhausch-com/privacidade.html",
+      "before": "d5e3381d7695b9f64d52ccaced5adad543e3bb3625dcbb8d90265031301c8de7",
+      "sha256": "30620115728d52b570ee49e96c1a89c9ae658fd2309c75dd5c7e9c8cc962bada"
+    },
+    {
+      "source": "produtos/index.html",
+      "target": "/var/www/html/danhausch-com/produtos/index.html",
+      "before": "d61600dfd41992e89a6c0f527320db4b0139dc05de9591cff36c6a4766d2f360",
+      "sha256": "667093f48354d8b9a90bc4fbef6aeb2aceaf0f7f8fd7a98fc54783a1504fedf0"
+    },
+    {
+      "source": "profissionais/index.html",
+      "target": "/var/www/html/danhausch-com/profissionais/index.html",
+      "before": "e32b6cb20d6f6b1ea2b116151b111ac90da849ecbc161df8205e0770e9699fcc",
+      "sha256": "beb649ac0fe2f775f1404fe5bf25b3e0b4f00a7e426414f277beefd3a081e949"
+    },
+    {
+      "source": "empresas/index.html",
+      "target": "/var/www/html/danhausch-com/empresas/index.html",
+      "before": "ad5a7e4f61fcd626461edcf040827db0c76432032c2849d1df8f555bcfa13430",
+      "sha256": "e408b6e14e58c989ad09275244e1aa18ea1b8cdc30b2706dc2f240539a511158"
+    },
+    {
+      "source": "assets/site-20261028-ux/app.js",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/app.js",
+      "before": null,
+      "sha256": "0f16d7cd15927a5ec3a51ff7580ef320c444c44e972dd5681f3b279209b452d4"
+    },
+    {
+      "source": "assets/site-20261028-ux/catalog-copy.js",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/catalog-copy.js",
+      "before": null,
+      "sha256": "5e2348ded8e1544ce9b0bed2a631f5cccb93ffb34f7b50748f36ecbc208aada8"
+    },
+    {
+      "source": "assets/site-20261028-ux/content.js",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/content.js",
+      "before": null,
+      "sha256": "3d96e5937a99d9606ef3f3a92da4b91235f606387cc24acd299cdde841974481"
+    },
+    {
+      "source": "assets/site-20261028-ux/effects.js",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/effects.js",
+      "before": null,
+      "sha256": "e6ee45a4e7f5253cb42e61ab3d69228920a73c0d89c958fb809157b2def352c6"
+    },
+    {
+      "source": "assets/site-20261028-ux/refinements.css",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/refinements.css",
+      "before": null,
+      "sha256": "3ffc335ce733ff148f50c07ef895779b4bac898850df4e9a9a4e294d5b28e504"
+    },
+    {
+      "source": "assets/site-20261028-ux/shell.css",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/shell.css",
+      "before": null,
+      "sha256": "7e7df05988d00ed2dc40212c9d676dd362b2bf5b0c1a7b779731a2ac7e8f860f"
+    },
+    {
+      "source": "assets/site-20261028-ux/site.js",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/site.js",
+      "before": null,
+      "sha256": "a3bd722fde1c9abb7dadf56462d465cede4d7fef8dc37b0ac44428ab7908e872"
+    },
+    {
+      "source": "assets/site-20261028-ux/styles.css",
+      "target": "/var/www/html/danhausch-com/assets/site-20261028-ux/styles.css",
+      "before": null,
+      "sha256": "c681748b0f36da8074e04bcaecbe99bb079e189b916d81c25920666a3625954d"
+    },
+    {
+      "source": "landing-pages/ba.html",
+      "target": "/var/www/html/predictive-history/ba.html",
+      "before": "10ec2f6ae17d2ecc459911f68cc0d29390a302901eee61e67c95a8adff04325b",
+      "sha256": "9402fddc88f13ee5d3a0dbabec23678a34c1f1ea9db4562dadd7777c8a167c97"
+    }
+  ]
+}
