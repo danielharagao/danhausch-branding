@@ -1,0 +1,25 @@
+[Unit]
+Description=AgPlace diagnostic form API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+User=root
+Group=root
+WorkingDirectory=/opt/agplace-form
+EnvironmentFile=/etc/agplace-form.env
+Environment=PATH=/root/.openclaw/workspace/.venvs/funnel/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/root/.openclaw/workspace/.venvs/funnel/bin/gunicorn --workers 2 --bind 127.0.0.1:5094 --access-logfile - --error-logfile - app:app
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadOnlyPaths=/opt/agplace-form /etc/agplace-form.env /usr/share/fonts
+ReadWritePaths=/var/lib/agplace-form /tmp
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

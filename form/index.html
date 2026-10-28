@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f7f1e7">
+  <title>Formulário AgPlace | Diagnóstico de IA</title>
+  <style>
+    :root{
+      --bg:#f7f1e7;
+      --paper:#fffaf1;
+      --ink:#211b15;
+      --muted:#756b61;
+      --line:#e3d7c8;
+      --accent:#e76f51;
+      --accent-2:#2a5f55;
+      --shadow:0 24px 70px rgba(70,45,20,.11);
+      --radius:24px;
+      color-scheme:light;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 12% 0%,#fff6e7 0,#f7f1e7 36%,#efe5d7 100%);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}
+    a{color:inherit}
+    .wrap{width:min(1080px,calc(100% - 36px));margin:0 auto}
+    header{padding:24px 0 12px}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.08em;font-size:13px;text-transform:uppercase;color:#342820}
+    .brand span{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:50%;background:#fff6e8;letter-spacing:0}
+    .hero{padding:42px 0 24px;display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:end}
+    .eyebrow{margin:0 0 14px;color:var(--accent-2);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,7vw,82px);line-height:.92;letter-spacing:-.055em;font-weight:500;max-width:720px}
+    h1 em{font-style:italic;color:var(--accent)}
+    .lead{margin:22px 0 0;max-width:610px;font-size:19px;color:#4d4238}
+    .summary{background:rgba(255,250,241,.72);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+    .summary h2{margin:0 0 12px;font-size:18px;letter-spacing:-.02em}
+    .summary ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:var(--muted)}
+    .summary li{display:flex;gap:10px}.summary li:before{content:"";width:7px;height:7px;margin-top:9px;border-radius:50%;background:var(--accent);flex:0 0 auto}
+    main{padding:20px 0 70px}
+    .form-card{background:rgba(255,250,241,.92);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);overflow:hidden}
+    .question{display:grid;grid-template-columns:86px 1fr;gap:22px;padding:30px;border-bottom:1px solid var(--line)}
+    .question:last-child{border-bottom:0}
+    .num{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:#211b15;color:#fff8ee;font-weight:800;letter-spacing:-.04em;font-size:19px}
+    fieldset{border:0;margin:0;padding:0;min-width:0}
+    legend{padding:0;margin:0 0 6px;font-size:25px;line-height:1.1;font-weight:800;letter-spacing:-.045em}
+    .hint{margin:0 0 18px;color:var(--muted);font-size:14px}
+    .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .options.single{grid-template-columns:1fr}
+    label.option{display:flex;gap:11px;align-items:flex-start;padding:13px 14px;border:1px solid #eadfd1;border-radius:16px;background:#fffdf8;color:#342b24;font-size:15px;min-height:50px}
+    label.option:hover{border-color:#d9bba5;background:#fff8ef}
+    input{margin-top:3px;accent-color:var(--accent);flex:0 0 auto}
+    .other-field{width:100%;margin-top:10px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#fffaf1;color:var(--ink);font:inherit;font-size:14px;outline:none}
+    .text-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.text-field{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#fffdf8;color:var(--ink);font:inherit;font-size:15px;outline:none}.text-field:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(231,111,81,.14)}
+    .other-field:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(231,111,81,.14)}
+    .full{grid-column:1/-1}
+    .footer-bar{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:24px 30px;background:#211b15;color:#fff8ee}
+    .footer-bar p{margin:0;color:#d8cdc1;font-size:14px}.footer-bar strong{display:block;color:#fff8ee;font-size:16px}.button{border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;white-space:nowrap;font:inherit}
+    .diagnosis{display:none;margin-top:28px;padding:30px;border:1px solid var(--line);border-radius:32px;background:#fffaf1;box-shadow:var(--shadow)}
+    .diagnosis.visible{display:block}.diagnosis-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}.score-card{padding:18px;border:1px solid #eadfd1;border-radius:18px;background:#fffdf8}.score-card small{display:block;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em}.score-card strong{display:block;margin-top:6px;font-size:24px;letter-spacing:-.04em}.score-card p{margin:8px 0 0;color:var(--muted)}.diagnosis h2{margin:0;font-size:30px;letter-spacing:-.05em}.diagnosis h3{margin:22px 0 8px;font-size:18px}.diagnosis p,.diagnosis li{color:#4d4238}.diagnosis ul,.diagnosis ol{padding-left:22px}.badge{display:inline-flex;margin-top:8px;padding:7px 10px;border-radius:999px;background:#eaf3ee;color:#245b50;font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+    @media (max-width:820px){.hero{grid-template-columns:1fr}.question{grid-template-columns:1fr;gap:12px;padding:24px 18px}.options{grid-template-columns:1fr}.footer-bar{display:block}.button{margin-top:16px;width:100%}legend{font-size:22px}.diagnosis-grid{grid-template-columns:1fr}.text-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="/"><span>DH</span>Daniel Hausch</a></header>
+
+  <section class="hero wrap">
+    <div>
+      <p class="eyebrow">AgPlace · Diagnóstico</p>
+      <h1>Diagnóstico rápido de <em>IA e aquisição</em></h1>
+      <p class="lead">UI simplificada para testar leitura das perguntas e alternativas antes de conectar com automação/CRM.</p>
+    </div>
+    <aside class="summary" aria-label="Resumo do formulário">
+      <h2>Objetivo do formulário</h2>
+      <ul>
+        <li>Entender mercado e modelo comercial da empresa.</li>
+        <li>Medir maturidade real no uso de IA e agentes.</li>
+        <li>Identificar origem atual dos clientes e faixa de faturamento.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <main class="wrap">
+    <form class="form-card">
+      <section class="question">
+        <div class="num">00</div>
+        <fieldset>
+          <legend>Para onde enviamos o diagnóstico?</legend>
+          <p class="hint">O PDF será enviado por e-mail ao final.</p>
+          <div class="text-grid">
+            <input class="text-field" type="text" name="nome" placeholder="Seu nome" autocomplete="name" required>
+            <input class="text-field" type="email" name="email" placeholder="Seu e-mail" autocomplete="email" required>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">01</div>
+        <fieldset>
+          <legend>Em qual mercado sua empresa atua?</legend>
+          <p class="hint">Escolha a opção mais próxima.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="mercado">Consultoria empresarial</label>
+            <label class="option"><input type="radio" name="mercado">Contabilidade, fiscal ou BPO financeiro</label>
+            <label class="option"><input type="radio" name="mercado">RH, recrutamento ou treinamento</label>
+            <label class="option"><input type="radio" name="mercado">Tecnologia, software ou automação</label>
+            <label class="option"><input type="radio" name="mercado">Engenharia, arquitetura ou construção</label>
+            <label class="option"><input type="radio" name="mercado">Marketing, comunicação ou vendas</label>
+            <label class="option"><input type="radio" name="mercado">Jurídico</label>
+            <label class="option"><input type="radio" name="mercado">Logística, transporte ou distribuição</label>
+            <label class="option"><input type="radio" name="mercado">Indústria ou manufatura</label>
+            <label class="option"><input type="radio" name="mercado">Financeiro, seguros ou investimentos</label>
+            <label class="option"><input type="radio" name="mercado">Energia, sustentabilidade ou facilities</label>
+            <label class="option"><input type="radio" name="mercado">Saúde, clínicas ou estética</label>
+            <label class="option"><input type="radio" name="mercado">Educação ou cursos</label>
+            <label class="option"><input type="radio" name="mercado">Comércio, varejo ou e-commerce</label>
+            <label class="option"><input type="radio" name="mercado">Imobiliário</label>
+            <label class="option"><input type="radio" name="mercado">Serviços locais</label>
+            <label class="option"><input type="radio" name="mercado">Alimentação, bares ou restaurantes</label>
+            <label class="option"><input type="radio" name="mercado">Eventos, turismo ou hotelaria</label>
+            <label class="option"><input type="radio" name="mercado">Agro</label>
+            <label class="option full"><input type="radio" name="mercado">Outro: <input class="other-field" type="text" name="mercado_outro" placeholder="Escreva qual mercado"></label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">02</div>
+        <fieldset>
+          <legend>Como sua empresa ganha dinheiro hoje?</legend>
+          <p class="hint">Sem jargão: marque o jeito principal.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="modelo">Prestando serviços para outras empresas</label>
+            <label class="option"><input type="radio" name="modelo">Vendendo produtos para outras empresas</label>
+            <label class="option"><input type="radio" name="modelo">Prestando serviços para pessoas físicas</label>
+            <label class="option"><input type="radio" name="modelo">Vendendo produtos para pessoas físicas</label>
+            <label class="option"><input type="radio" name="modelo">Vendendo software, sistema ou plataforma</label>
+            <label class="option"><input type="radio" name="modelo">Vendendo cursos, treinamentos ou mentorias</label>
+            <label class="option"><input type="radio" name="modelo">Intermediando compradores e vendedores</label>
+            <label class="option full"><input type="radio" name="modelo">Outro: <input class="other-field" type="text" name="modelo_outro" placeholder="Escreva como a empresa ganha dinheiro"></label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">03</div>
+        <fieldset>
+          <legend>Quais ferramentas de IA sua empresa usa hoje?</legend>
+          <p class="hint">Pode marcar mais de uma opção.</p>
+          <div class="options">
+            <label class="option full"><input type="checkbox" name="ia">Nenhuma ainda</label>
+            <label class="option"><input type="checkbox" name="ia">Chats de IA no navegador: ChatGPT, Claude, Gemini, Perplexity, Copilot</label>
+            <label class="option"><input type="checkbox" name="ia">Apps de IA no celular: ChatGPT, Gemini, Claude, Copilot</label>
+            <label class="option"><input type="checkbox" name="ia">IA em ferramentas de trabalho: Canva, Notion, Google Workspace, Microsoft 365, CRM, planilhas, e-mail</label>
+            <label class="option"><input type="checkbox" name="ia">Criação de apps/sites com IA: Lovable, Replit, Bolt, Base44, v0</label>
+            <label class="option"><input type="checkbox" name="ia">Editores com IA para código/projetos: Cursor, Windsurf, VS Code com Copilot</label>
+            <label class="option"><input type="checkbox" name="ia">Agentes no computador com acesso a arquivos/projetos: Claude Desktop, ChatGPT Desktop ou similares</label>
+            <label class="option"><input type="checkbox" name="ia">Agentes via terminal/CLI: Claude Code, Codex, Gemini CLI, Pi Agent, Hermes, OpenClaw</label>
+            <label class="option"><input type="checkbox" name="ia">Agentes em servidor/VPS executando tarefas ou monitoramentos</label>
+            <label class="option"><input type="checkbox" name="ia">Sistemas agênticos integrados com APIs, CRM, banco de dados, WhatsApp, e-mail ou automações recorrentes</label>
+            <label class="option full"><input type="checkbox" name="ia">Outro: <input class="other-field" type="text" name="ia_outro" placeholder="Escreva quais ferramentas ou agentes usa"></label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">04</div>
+        <fieldset>
+          <legend>De onde vem a maioria dos seus clientes hoje?</legend>
+          <p class="hint">Escolha a principal fonte atual.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="origem">Indicações</label>
+            <label class="option"><input type="radio" name="origem">Prospecção ativa</label>
+            <label class="option"><input type="radio" name="origem">Google ou busca orgânica</label>
+            <label class="option"><input type="radio" name="origem">Tráfego pago</label>
+            <label class="option"><input type="radio" name="origem">Redes sociais</label>
+            <label class="option"><input type="radio" name="origem">Eventos ou networking</label>
+            <label class="option"><input type="radio" name="origem">Parcerias</label>
+            <label class="option"><input type="radio" name="origem">Marketplace ou plataformas</label>
+            <label class="option full"><input type="radio" name="origem">Outro: <input class="other-field" type="text" name="origem_outro" placeholder="Escreva de onde vêm os clientes"></label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">05</div>
+        <fieldset>
+          <legend>Qual seu faturamento mensal atual?</legend>
+          <p class="hint">Faixa aproximada.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="faturamento">Até R$ 20 mil/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 20 mil a R$ 50 mil/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 50 mil a R$ 100 mil/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 100 mil a R$ 300 mil/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 300 mil a R$ 1 milhão/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 1 milhão a R$ 3 milhões/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 3 milhões a R$ 10 milhões/mês</label>
+            <label class="option"><input type="radio" name="faturamento">R$ 10 milhões a R$ 30 milhões/mês</label>
+            <label class="option"><input type="radio" name="faturamento">Acima de R$ 30 milhões/mês</label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">06</div>
+        <fieldset>
+          <legend>Quantas pessoas trabalham na empresa hoje?</legend>
+          <p class="hint">Considere só pessoas em tempo integral ou dedicação recorrente.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="equipe">Só eu, ainda sem faturamento</label>
+            <label class="option"><input type="radio" name="equipe">Só eu, algum faturamento</label>
+            <label class="option"><input type="radio" name="equipe">Eu e fornecedores/parceiros</label>
+            <label class="option"><input type="radio" name="equipe">2 a 4 pessoas</label>
+            <label class="option"><input type="radio" name="equipe">5 a 9 pessoas</label>
+            <label class="option"><input type="radio" name="equipe">10 a 19 pessoas</label>
+            <label class="option"><input type="radio" name="equipe">20 a 49 pessoas</label>
+            <label class="option"><input type="radio" name="equipe">50 a 99 pessoas</label>
+            <label class="option"><input type="radio" name="equipe">100 a 249 pessoas</label>
+            <label class="option"><input type="radio" name="equipe">250 pessoas ou mais</label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">07</div>
+        <fieldset>
+          <legend>Você é dono(a), sócio(a) ou funcionário(a) da empresa?</legend>
+          <p class="hint">Ajuda a entender seu poder de decisão na empresa.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="participacao">Sou fundador(a) ou dono(a) solo</label>
+            <label class="option"><input type="radio" name="participacao">Sou dono(a) majoritário(a), com mais de 51%</label>
+            <label class="option"><input type="radio" name="participacao">Sou sócio(a) 50/50</label>
+            <label class="option"><input type="radio" name="participacao">Sou sócio(a) minoritário(a), com menos de 50%</label>
+            <label class="option"><input type="radio" name="participacao">Sou funcionário(a)</label>
+            <label class="option"><input type="radio" name="participacao">Sou fornecedor(a) ou parceiro(a)</label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">08</div>
+        <fieldset>
+          <legend>Qual você acredita ser seu maior gargalo de crescimento?</legend>
+          <p class="hint">Escolha o principal gargalo hoje.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="gargalo">Gerar mais leads qualificados</label>
+            <label class="option"><input type="radio" name="gargalo">Transformar visitantes em contatos comerciais</label>
+            <label class="option"><input type="radio" name="gargalo">Responder leads rápido o suficiente</label>
+            <label class="option"><input type="radio" name="gargalo">Qualificar melhor quem chega</label>
+            <label class="option"><input type="radio" name="gargalo">Fazer follow-up de forma consistente</label>
+            <label class="option"><input type="radio" name="gargalo">Organizar processo comercial e CRM</label>
+            <label class="option"><input type="radio" name="gargalo">Depender demais de indicação</label>
+            <label class="option"><input type="radio" name="gargalo">Escalar operação sem aumentar equipe</label>
+            <label class="option full"><input type="radio" name="gargalo">Outro: <input class="other-field" type="text" name="gargalo_outro" placeholder="Escreva qual gargalo"></label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="question">
+        <div class="num">09</div>
+        <fieldset>
+          <legend>Você investe mensalmente em marketing e vendas?</legend>
+          <p class="hint">Se sim, escolha a faixa aproximada de investimento mensal.</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">Não investimos hoje</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">Até R$ 1 mil/mês</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">R$ 1 mil a R$ 3 mil/mês</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">R$ 3 mil a R$ 5 mil/mês</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">R$ 5 mil a R$ 10 mil/mês</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">R$ 10 mil a R$ 30 mil/mês</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">R$ 30 mil a R$ 100 mil/mês</label>
+            <label class="option"><input type="radio" name="investimento_marketing_vendas">Acima de R$ 100 mil/mês</label>
+            <label class="option full"><input type="radio" name="investimento_marketing_vendas">Outro valor: <input class="other-field" type="text" name="investimento_marketing_vendas_outro" placeholder="Escreva quanto investe por mês"></label>
+          </div>
+        </fieldset>
+      </section>
+
+      <div class="footer-bar">
+        <p><strong>Diagnóstico instantâneo</strong> O resultado abaixo é gerado localmente nesta prévia; ainda não salva no CRM.</p>
+        <button class="button" type="submit">Gerar diagnóstico</button>
+      </div>
+    </form>
+
+    <section class="diagnosis" id="diagnostico" aria-live="polite"></section>
+  </main>
+  <script>
+    const form = document.querySelector('.form-card');
+    const output = document.querySelector('#diagnostico');
+
+    function selectedText(name){
+      const input = form.querySelector(`[name="${name}"]:checked`);
+      if(!input) return '';
+      const label = input.closest('label');
+      return label ? label.textContent.replace(/\s+/g,' ').trim() : '';
+    }
+    function selectedMany(name){
+      return [...form.querySelectorAll(`[name="${name}"]:checked`)].map(input => input.closest('label').textContent.replace(/\s+/g,' ').trim());
+    }
+    function scoreRevenue(text){
+      if(!text) return 0;
+      if(text.includes('Até R$ 20')) return 4;
+      if(text.includes('20 mil a R$ 50')) return 10;
+      if(text.includes('50 mil a R$ 100')) return 16;
+      if(text.includes('100 mil a R$ 300')) return 22;
+      if(text.includes('300 mil a R$ 1 milhão')) return 28;
+      if(text.includes('1 milhão a R$ 3')) return 34;
+      if(text.includes('3 milhões a R$ 10')) return 38;
+      if(text.includes('10 milhões a R$ 30')) return 40;
+      if(text.includes('Acima de R$ 30')) return 42;
+      return 8;
+    }
+    function scoreInvestment(text){
+      if(!text || text.includes('Não investimos')) return 2;
+      if(text.includes('Até R$ 1')) return 5;
+      if(text.includes('1 mil a R$ 3')) return 8;
+      if(text.includes('3 mil a R$ 5')) return 11;
+      if(text.includes('5 mil a R$ 10')) return 14;
+      if(text.includes('10 mil a R$ 30')) return 18;
+      if(text.includes('30 mil a R$ 100')) return 22;
+      if(text.includes('Acima de R$ 100')) return 25;
+      return 10;
+    }
+    function aiMaturity(items){
+      let level = 0;
+      if(items.some(x => x.includes('Chats de IA') || x.includes('Apps de IA'))) level = Math.max(level,1);
+      if(items.some(x => x.includes('ferramentas de trabalho'))) level = Math.max(level,2);
+      if(items.some(x => x.includes('Lovable') || x.includes('Cursor') || x.includes('Windsurf'))) level = Math.max(level,3);
+      if(items.some(x => x.includes('Agentes no computador') || x.includes('terminal/CLI'))) level = Math.max(level,4);
+      if(items.some(x => x.includes('servidor/VPS') || x.includes('Sistemas agênticos'))) level = Math.max(level,5);
+      if(items.some(x => x.includes('Nenhuma ainda')) && items.length === 1) level = 0;
+      return level;
+    }
+    function commercialStage(origem, investimento, gargalo){
+      if((origem.includes('Indicações') || origem.includes('Outro')) && investimento.includes('Não investimos')) return ['1/4 — Comercial informal','A aquisição parece depender de relacionamento, indicação ou esforço manual. O risco central é baixa previsibilidade.'];
+      if(investimento.includes('Até R$ 1') || investimento.includes('1 mil a R$ 3') || origem.includes('Prospecção ativa')) return ['2/4 — Aquisição em teste','Existe movimento comercial, mas o funil provavelmente ainda tem vazamento entre atração, resposta, qualificação e follow-up.'];
+      if(investimento.includes('5 mil') || investimento.includes('10 mil') || gargalo.includes('CRM') || gargalo.includes('follow-up')) return ['3/4 — Funil operacional','A empresa já tem alguma estrutura. O maior ganho tende a vir de organização, automação e visibilidade do processo.'];
+      return ['4/4 — Comercial escalável','O foco deixa de ser criar o funil e passa a ser otimizar velocidade, conversão, integração e ROI.'];
+    }
+    function intervention(gargalo, aiLevel, investimento){
+      if(gargalo.includes('visitantes')) return 'Página de conversão + CTA/WhatsApp + melhoria de oferta.';
+      if(gargalo.includes('Responder')) return 'Agente de primeira resposta no WhatsApp com triagem inicial.';
+      if(gargalo.includes('Qualificar')) return 'Agente de qualificação com perguntas, score e encaminhamento.';
+      if(gargalo.includes('follow-up')) return 'Cadência automática D+0, D+1, D+3 e D+7 integrada ao CRM.';
+      if(gargalo.includes('CRM')) return 'Pipeline comercial simples, critérios de oportunidade e relatório de conversão.';
+      if(gargalo.includes('indicação')) return 'Canal previsível de aquisição: landing page + tráfego/prospecção + rotina de follow-up.';
+      if(gargalo.includes('Escalar')) return aiLevel >= 4 ? 'Sistema agêntico integrado para automatizar rotinas comerciais e operacionais.' : 'Automação gradual dos pontos repetitivos antes de escalar equipe.';
+      if(investimento.includes('Não investimos')) return 'Diagnóstico de aquisição e página/oferta antes de mídia paga.';
+      return 'Sistema de Aquisição B2B com IA: página, tráfego, WhatsApp/CRM e follow-up.';
+    }
+    function fitLabel(score){
+      if(score >= 85) return 'Prioridade alta';
+      if(score >= 70) return 'Bom fit';
+      if(score >= 40) return 'Médio fit';
+      return 'Baixo fit agora';
+    }
+    function aiLabel(level){
+      return ['0/5 — Ainda não usa IA','1/5 — Uso casual','2/5 — IA em ferramentas','3/5 — Maker/dev assistido por IA','4/5 — Agentes locais ou CLI','5/5 — Sistemas agênticos em operação'][level];
+    }
+
+    function renderDiagnosis(diagnosis, statusMessage){
+      output.innerHTML = `
+        <span class="badge">Diagnóstico AgPlace</span>
+        <h2>Seu score: ${diagnosis.score}/100 — ${diagnosis.fit}</h2>
+        ${statusMessage ? `<p><strong>Status:</strong> ${statusMessage}</p>` : ''}
+        <p><strong>Perfil provável:</strong> ${diagnosis.perfil}. ${diagnosis.respondente ? 'Respondente: ' + diagnosis.respondente + '.' : ''}</p>
+        <div class="diagnosis-grid">
+          <div class="score-card"><small>Maturidade comercial</small><strong>${diagnosis.maturidade_comercial}</strong><p>${diagnosis.maturidade_comercial_texto}</p></div>
+          <div class="score-card"><small>Maturidade em IA</small><strong>${diagnosis.maturidade_ia}</strong><p>${diagnosis.maturidade_ia.includes('0/5') || diagnosis.maturidade_ia.includes('1/5') ? 'A IA ainda depende de uso individual e manual.' : diagnosis.maturidade_ia.includes('2/5') || diagnosis.maturidade_ia.includes('3/5') ? 'Já existe uso prático, mas o ganho está em conectar ao processo comercial.' : 'Há base para agentes conectados a dados, rotinas e métricas.'}</p></div>
+          <div class="score-card"><small>Potencial AgPlace</small><strong>${diagnosis.fit}</strong><p>${diagnosis.score >= 70 ? 'Existe oportunidade clara para melhorar aquisição, resposta ou qualificação.' : 'Antes de um projeto maior, vale organizar oferta, canal e processo.'}</p></div>
+          <div class="score-card"><small>Principal risco</small><strong>${diagnosis.principal_risco}</strong><p>Esse é o ponto que provavelmente mais limita crescimento agora.</p></div>
+        </div>
+        <h3>O que isso significa</h3>
+        <p>Sua empresa parece ter um gargalo entre atenção, conversas comerciais e processo de acompanhamento. O próximo ganho não é “usar IA por usar”, mas aplicar automação no ponto onde dinheiro está vazando.</p>
+        <h3>Próximo passo recomendado</h3>
+        <p><strong>${diagnosis.proximo_passo}</strong></p>
+        <h3>Plano sugerido para 30 dias</h3>
+        <ol>${diagnosis.plano_30_dias.map(item => `<li>${item}</li>`).join('')}</ol>`;
+      output.classList.add('visible');
+      output.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+
+    function choiceText(input){
+      const label = input.closest('label');
+      if(!label) return '';
+      let text = [...label.childNodes].filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').replace(/\s+/g,' ').trim();
+      const other = label.querySelector('.other-field');
+      if(other && other.value.trim()) text = text.replace(/:$/, '') + ': ' + other.value.trim();
+      return text || label.textContent.replace(/\s+/g,' ').trim();
+    }
+    function collectData(){
+      const data = {
+        nome: form.elements.nome.value.trim(),
+        email: form.elements.email.value.trim(),
+      };
+      ['mercado','modelo','origem','faturamento','equipe','participacao','gargalo','investimento_marketing_vendas'].forEach(name => {
+        const input = form.querySelector(`[name="${name}"]:checked`);
+        data[name] = input ? choiceText(input) : '';
+      });
+      data.ia = [...form.querySelectorAll('[name="ia"]:checked')].map(choiceText);
+      return data;
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if(!form.reportValidity()) return;
+      const button = form.querySelector('button[type="submit"]');
+      const original = button.textContent;
+      button.disabled = true;
+      button.textContent = 'Gerando PDF...';
+      output.innerHTML = '<span class="badge">Processando</span><h2>Gerando diagnóstico e preparando envio por e-mail…</h2>';
+      output.classList.add('visible');
+      try{
+        const response = await fetch('/form/api/diagnostico', {
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(collectData()),
+        });
+        const result = await response.json().catch(() => ({}));
+        if(result.diagnosis){
+          renderDiagnosis(result.diagnosis, result.message || result.error || 'Diagnóstico gerado.');
+        }else{
+          throw new Error(result.error || 'Não foi possível gerar o diagnóstico.');
+        }
+      }catch(error){
+        output.innerHTML = `<span class="badge">Erro</span><h2>Não consegui enviar o diagnóstico agora.</h2><p>${error.message || 'Tente novamente em alguns minutos.'}</p>`;
+        output.classList.add('visible');
+      }finally{
+        button.disabled = false;
+        button.textContent = original;
+      }
+    });
+  </script>
+</body>
+</html>

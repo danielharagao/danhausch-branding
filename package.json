@@ -1,0 +1,14 @@
+{
+  "name": "danhausch-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Danhausch consulting website and product catalog",
+  "scripts": {
+    "start": "python3 -m http.server 8080 --bind 127.0.0.1",
+    "check": "node --check assets/site-20261016T001007Z/app.js && node --check assets/site-20261016T001007Z/content.js && node --check assets/site-20261016T001007Z/site.js && node --check assets/site-20261016T001007Z/effects.js && python3 tests/static.py",
+    "test": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}

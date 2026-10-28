@@ -1,0 +1,127 @@
+{
+  "captured": "2026-10-28",
+  "host": "187.77.48.10",
+  "document_root": "/var/www/html/danhausch-com",
+  "files": [
+    {
+      "path": "styles.css",
+      "sha256": "8c2fdf672b372691df63561ca164ada71e44860e882b46c6871c8357ff9f626c",
+      "bytes": 25600
+    },
+    {
+      "path": "produtos/index.html",
+      "sha256": "d61600dfd41992e89a6c0f527320db4b0139dc05de9591cff36c6a4766d2f360",
+      "bytes": 9395
+    },
+    {
+      "path": "assets/site-20261016T001007Z/refinements.css",
+      "sha256": "769fc8ea602e4bca6685702a4518f93ec2520aec4d1939167ba20195096dd58d",
+      "bytes": 1829
+    },
+    {
+      "path": "assets/site-20261016T001007Z/styles.css",
+      "sha256": "c681748b0f36da8074e04bcaecbe99bb079e189b916d81c25920666a3625954d",
+      "bytes": 17521
+    },
+    {
+      "path": "assets/site-20261016T001007Z/content.js",
+      "sha256": "a76c7696c46fbd84c2bfd82354a94ba1d021e195de773e43906ae3c5a02a7c98",
+      "bytes": 14431
+    },
+    {
+      "path": "assets/site-20261016T001007Z/site.js",
+      "sha256": "3f02bd9baeff93cb90fd3b45707f9d26835e7b71a23a4fa1a9f26c5837f9524b",
+      "bytes": 2281
+    },
+    {
+      "path": "assets/site-20261016T001007Z/app.js",
+      "sha256": "98cd5740b2408c5320e7b46d4b582229dbdc8d7b0691834fa6e6f148d83db97b",
+      "bytes": 13118
+    },
+    {
+      "path": "assets/site-20261016T001007Z/effects.js",
+      "sha256": "ef58caed0e3be6a493f948f5a41e33471cbdecf804a2e041fe189bbbfe70db17",
+      "bytes": 3333
+    },
+    {
+      "path": "assets/site-20261015T230105Z/refinements.css",
+      "sha256": "b8853fabf9527363ae91397726f1a8930ee860ffdc599b629c0c7f27239f1ed6",
+      "bytes": 1352
+    },
+    {
+      "path": "assets/site-20261015T230105Z/styles.css",
+      "sha256": "c681748b0f36da8074e04bcaecbe99bb079e189b916d81c25920666a3625954d",
+      "bytes": 17521
+    },
+    {
+      "path": "assets/site-20261015T230105Z/content.js",
+      "sha256": "0100a5b050df8fa844a544f51479a14988066bcd99a5c1f30b797ed3b16b7603",
+      "bytes": 13760
+    },
+    {
+      "path": "assets/site-20261015T230105Z/site.js",
+      "sha256": "3f02bd9baeff93cb90fd3b45707f9d26835e7b71a23a4fa1a9f26c5837f9524b",
+      "bytes": 2281
+    },
+    {
+      "path": "assets/site-20261015T230105Z/app.js",
+      "sha256": "98cd5740b2408c5320e7b46d4b582229dbdc8d7b0691834fa6e6f148d83db97b",
+      "bytes": 13118
+    },
+    {
+      "path": "assets/site-20261015T230105Z/effects.js",
+      "sha256": "ef58caed0e3be6a493f948f5a41e33471cbdecf804a2e041fe189bbbfe70db17",
+      "bytes": 3333
+    },
+    {
+      "path": "assets/img/dan/dan-profissionais.webp",
+      "sha256": "ae0bfa0f5550d9be57afdd50bef95c073c7aed5a01b4dc72ae922646e2515575",
+      "bytes": 53210
+    },
+    {
+      "path": "assets/img/dan/dan-empresas.webp",
+      "sha256": "65546ec6cae9f66dbe955dbf7401be95a09e36f7f9b392db458c284de086a815",
+      "bytes": 135114
+    },
+    {
+      "path": "assets/img/dan/dan-home-editorial.webp",
+      "sha256": "eca861e11d744f22de0ea42d75d19e6bfa1e74ba07a408e58c51d51d27016d55",
+      "bytes": 47592
+    },
+    {
+      "path": "form/index.html",
+      "sha256": "541bb467e71225f043a3eca20b0f2d4169a33ab71684930ad1bb530f0f9e1ccc",
+      "bytes": 30992
+    },
+    {
+      "path": "privacidade.html",
+      "sha256": "d5e3381d7695b9f64d52ccaced5adad543e3bb3625dcbb8d90265031301c8de7",
+      "bytes": 4734
+    },
+    {
+      "path": "sobre.html",
+      "sha256": "6b8f33f15fa406f87c3b177f92c22ddf91897cab681b0111db4afa4b9ebcd2d3",
+      "bytes": 7134
+    },
+    {
+      "path": "empresas/index.html",
+      "sha256": "ad5a7e4f61fcd626461edcf040827db0c76432032c2849d1df8f555bcfa13430",
+      "bytes": 8175
+    },
+    {
+      "path": "ai-portfolio/index.html",
+      "sha256": "64098af6d6f386b650e65c1befb0658cff4f8c3aedf193e74f73d44b45254035",
+      "bytes": 31178
+    },
+    {
+      "path": "profissionais/index.html",
+      "sha256": "e32b6cb20d6f6b1ea2b116151b111ac90da849ecbc161df8205e0770e9699fcc",
+      "bytes": 7205
+    },
+    {
+      "path": "index.html",
+      "sha256": "ad96cc7ec060e40da6bafc88ee8905b14d5f0c4aa1669e322efd188bccf2fc71",
+      "bytes": 8907
+    }
+  ]
+}
