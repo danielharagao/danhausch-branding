@@ -37,4 +37,4 @@ fix/balanced-brand-copy aab20e8007019227cebe825dbb2a31c3ef764752
 main 9e3281cb114ef9cff06a37ad64e9771d4311d264
 ```
 
-The archive branches preserve source history; they are not deployment branches. The repository default remains `master`.
+The archive branches preserve source history; they are not deployment branches. The repository default branch is `main`.
